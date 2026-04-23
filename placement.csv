@@ -1,0 +1,201 @@
+Student ID,Student Name,Course,Company,Role,Package (Rs.L),Offer Date,Status,Placement Officer,appointed_date
+STU0001,Kiran,MERN Stack Development,,,,,Not Placed,,
+STU0002,Tanya,Data Science with Python,Accenture,Software Engineer,18.8,2026-03-27,In Progress,Nivetha S,2025-01-10
+STU0003,Faisal,Data Science with Python,Infosys,System Engineer,6.9,2026-03-24,Placed,Nivetha S,2025-01-17
+STU0004,Ajay,Python Full Stack Development,Google,QA Engineer,4.3,2026-03-20,Placed,Nivetha S,2025-01-24
+STU0005,Rahul,MERN Stack Development,,,,,Not Placed,,
+STU0006,Arjun,DevOps,Infosys,AI Engineer,17.7,2026-03-19,Placed,Nivetha S,2025-01-31
+STU0007,Irfan,React Frontend Developer,TCS,Software Engineer,14.4,2026-03-16,In Progress,Nivetha S,2025-02-07
+STU0008,Neeraj,Python Full Stack Development,Accenture,Cloud Engineer,13.0,2026-03-10,In Progress,Nivetha S,2025-02-14
+STU0009,Anjali,Business Analytics,,,,,Not Placed,,
+STU0010,Neeraj,MERN Stack Development,,,,,Not Placed,,
+STU0011,Rahul,DevOps,Cognizant,Cloud Engineer,11.4,2026-03-15,In Progress,Nivetha S,2025-02-21
+STU0012,Sahil,Python Full Stack Development,Wipro,System Engineer,11.9,2026-03-04,In Progress,Nivetha S,2025-02-28
+STU0013,Divya,Python Full Stack Development,,,,,Not Placed,,
+STU0014,Tanya,Flutter Development,,,,,Not Placed,,
+STU0015,Divya,Python Full Stack Development,,,,,Not Placed,,
+STU0016,Keerthi,React Frontend Developer,HCL,Software Engineer,10.9,2026-03-08,Placed,Nivetha S,2025-03-07
+STU0017,Imran,Data Science with Python,Infosys,System Engineer,18.1,2026-03-01,Placed,Nivetha S,2025-03-14
+STU0018,Arjun,Python Full Stack Development,Amazon,AI Engineer,16.7,2026-03-15,Placed,Nivetha S,2025-03-21
+STU0019,Pooja,Python Full Stack Development,Zoho,Software Engineer,18.4,2026-03-13,In Progress,Nivetha S,2025-03-28
+STU0020,Meena,MERN Stack Development,Capgemini,Cloud Engineer,15.4,2026-03-27,In Progress,Nivetha S,2025-04-04
+STU0021,Tanya,Python Full Stack Development,Zoho,AI Engineer,10.8,2026-03-13,Placed,Nivetha S,2025-04-11
+STU0022,Arjun,Python Full Stack Development,Zoho,Cloud Engineer,13.0,2026-03-07,In Progress,Nivetha S,2025-04-18
+STU0023,Divya,Data Science with Python,,,,,Not Placed,,
+STU0024,Aman,MERN Stack Development,Wipro,System Engineer,6.5,2026-03-19,In Progress,Nivetha S,2025-04-25
+STU0025,Reshma,React Frontend Developer,,,,,Not Placed,,
+STU0026,Nisha,Data Science with Python,,,,,Not Placed,,
+STU0027,Vivek,Data Science with Python,Flipkart,Developer,8.3,2026-03-01,Placed,Nivetha S,2025-05-02
+STU0028,Rahul,React Frontend Developer,,,,,Not Placed,,
+STU0029,Sanjay,Python Full Stack Development,Capgemini,Cloud Engineer,15.8,2026-03-10,In Progress,Nivetha S,2025-05-09
+STU0030,Zara,Data Science with Python,Zoho,Cloud Engineer,3.5,2026-03-06,In Progress,Nivetha S,2025-05-16
+STU0031,Sahil,Data Science with Python,TCS,Data Analyst,17.5,2026-03-08,Placed,Nivetha S,2025-05-23
+STU0032,Arjun,Data Science with Python,,,,,Not Placed,,
+STU0033,Aisha,Data Science with Python,Cognizant,Software Engineer,3.7,2026-03-24,Placed,Nivetha S,2025-05-30
+STU0034,John,React Frontend Developer,Amazon,Developer,7.3,2026-03-09,Placed,Nivetha S,2025-06-06
+STU0035,Faisal,Data Science with Python,Accenture,Software Engineer,18.2,2026-03-13,In Progress,Nivetha S,2025-06-13
+STU0036,Tanya,React Frontend Developer,,,,,Not Placed,,
+STU0037,Aman,Data Science with Python,Wipro,Software Engineer,16.7,2026-03-04,In Progress,Nivetha S,2025-06-20
+STU0038,Farhan,Cyber Security,HCL,AI Engineer,8.1,2026-03-22,Placed,Nivetha S,2025-06-27
+STU0039,Kiran,Data Science with Python,Amazon,QA Engineer,9.8,2026-03-15,In Progress,Nivetha S,2025-07-04
+STU0040,Harsha,Data Science with Python,Capgemini,Software Engineer,14.4,2026-03-28,Placed,Nivetha S,2025-07-11
+STU0041,Sahil,MERN Stack Development,,,,,Not Placed,,
+STU0042,Aisha,Data Science with Python,Google,Data Analyst,2.8,2026-03-08,Placed,Nivetha S,2025-07-18
+STU0043,Imran,Data Science with Python,,,,,Not Placed,,
+STU0044,Rahul,MERN Stack Development,,,,,Not Placed,,
+STU0045,Aman,Data Science with Python,,,,,Not Placed,,
+STU0046,John,React Frontend Developer,Wipro,System Engineer,17.8,2026-03-12,Placed,Nivetha S,2025-07-25
+STU0047,John,MERN Stack Development,,,,,Not Placed,,
+STU0048,Zara,DevOps,,,,,Not Placed,,
+STU0049,Nisha,React Frontend Developer,,,,,Not Placed,,
+STU0050,Sahil,MERN Stack Development,,,,,Not Placed,,
+STU0051,Aisha,MERN Stack Development,,,,,Not Placed,,
+STU0052,Arjun,Data Science with Python,,,,,Not Placed,,
+STU0053,Aman,Python Full Stack Development,TCS,Data Analyst,13.1,2026-03-22,Placed,Nivetha S,2025-08-01
+STU0054,Faisal,Data Science with Python,TCS,Developer,6.5,2026-03-06,In Progress,Nivetha S,2025-08-08
+STU0055,Tanya,Data Science with Python,HCL,Developer,18.3,2026-03-22,Placed,Nivetha S,2025-08-15
+STU0056,Aisha,Data Science with Python,Zoho,Cloud Engineer,4.6,2026-03-05,Placed,Nivetha S,2025-08-22
+STU0057,Aisha,MERN Stack Development,TCS,QA Engineer,17.2,2026-03-19,In Progress,Nivetha S,2025-08-29
+STU0058,Aisha,React Frontend Developer,Amazon,Developer,13.4,2026-03-09,In Progress,Nivetha S,2025-09-05
+STU0059,Faisal,Python Full Stack Development,Infosys,Data Analyst,12.6,2026-03-23,In Progress,Nivetha S,2025-09-12
+STU0060,Harsha,MERN Stack Development,,,,,Not Placed,,
+STU0061,Kiran,MERN Stack Development,,,,,Not Placed,,
+STU0062,Nisha,Data Science with Python,Wipro,QA Engineer,10.2,2026-03-24,Placed,Nivetha S,2025-09-19
+STU0063,Neeraj,React Frontend Developer,Zoho,Cloud Engineer,16.6,2026-03-26,Placed,Nivetha S,2025-09-26
+STU0064,Farhan,Python Full Stack Development,Infosys,Developer,16.6,2026-03-24,In Progress,Nivetha S,2025-10-03
+STU0065,Farhan,DevOps,Zoho,AI Engineer,18.8,2026-03-23,Placed,Nivetha S,2025-10-10
+STU0066,Pooja,MERN Stack Development,TCS,Software Engineer,18.7,2026-03-27,Placed,Nivetha S,2025-10-17
+STU0067,Tanya,Python Full Stack Development,HCL,AI Engineer,11.7,2026-03-28,In Progress,Nivetha S,2025-10-24
+STU0068,Naveen,Python Full Stack Development,,,,,Not Placed,,
+STU0069,Vivek,MERN Stack Development,Cognizant,Data Analyst,17.5,2026-03-22,Placed,Nivetha S,2025-10-31
+STU0070,Varun,Python Full Stack Development,Google,Cloud Engineer,16.3,2026-03-01,Placed,Nivetha S,2025-11-07
+STU0071,Harsha,Data Science with Python,Accenture,AI Engineer,9.8,2026-03-15,Placed,Nivetha S,2025-11-14
+STU0072,Kiran,Cyber Security,Google,Cloud Engineer,7.5,2026-03-27,In Progress,Nivetha S,2025-11-21
+STU0073,Sanjay,MERN Stack Development,Cognizant,Developer,18.8,2026-03-25,In Progress,Nivetha S,2025-11-28
+STU0074,Reshma,MERN Stack Development,Zoho,AI Engineer,7.8,2026-03-12,In Progress,Nivetha S,2025-12-05
+STU0075,Aman,Python Full Stack Development,,,,,Not Placed,,
+STU0076,Anjali,Business Analytics,Infosys,Developer,10.7,2026-03-26,Placed,Nivetha S,2025-12-12
+STU0077,Manoj,MERN Stack Development,,,,,Not Placed,,
+STU0078,Aisha,MERN Stack Development,HCL,System Engineer,6.5,2026-03-16,Placed,Nivetha S,2025-12-19
+STU0079,Farhan,React Frontend Developer,Accenture,QA Engineer,13.9,2026-03-07,Placed,Nivetha S,2025-12-26
+STU0080,John,Data Science with Python,Zoho,Software Engineer,10.1,2026-03-18,Placed,Nivetha S,2026-01-02
+STU0081,Sanjay,Python Full Stack Development,Google,Cloud Engineer,7.4,2026-03-17,In Progress,Nivetha S,2026-01-09
+STU0082,Anjali,Data Science with Python,,,,,Not Placed,,
+STU0083,John,Cyber Security,,,,,Not Placed,,
+STU0084,Rohit,Python Full Stack Development,Infosys,Data Analyst,4.5,2026-03-02,Placed,Nivetha S,2026-01-16
+STU0085,Sanjay,Data Science with Python,,,,,Not Placed,,
+STU0086,Kiran,React Frontend Developer,,,,,Not Placed,,
+STU0087,Manoj,Data Science with Python,Cognizant,AI Engineer,4.4,2026-03-06,In Progress,Nivetha S,2026-01-23
+STU0088,Sneha,Data Science with Python,Accenture,System Engineer,4.9,2026-03-28,In Progress,Nivetha S,2026-01-30
+STU0089,Anjali,Data Science with Python,Google,Software Engineer,4.9,2026-03-06,Placed,Nivetha S,2026-02-06
+STU0090,Sanjay,Cyber Security,,,,,Not Placed,,
+STU0091,Vivek,Data Science with Python,Wipro,Software Engineer,5.2,2026-03-05,In Progress,Nivetha S,2026-02-13
+STU0092,Ajay,Python Full Stack Development,,,,,Not Placed,,
+STU0093,Meena,DevOps,HCL,AI Engineer,15.7,2026-03-17,In Progress,Nivetha S,2026-02-20
+STU0094,Imran,Data Science with Python,Wipro,Software Engineer,9.2,2026-03-06,Placed,Nivetha S,2026-02-27
+STU0095,Faisal,Python Full Stack Development,Google,QA Engineer,2.8,2026-03-19,Placed,Nivetha S,2026-03-06
+STU0096,Naveen,React Frontend Developer,TCS,System Engineer,8.4,2026-03-10,Placed,Nivetha S,2026-03-13
+STU0097,Pooja,React Frontend Developer,Amazon,QA Engineer,11.6,2026-03-13,In Progress,Nivetha S,2026-03-20
+STU0098,Irfan,React Frontend Developer,TCS,Cloud Engineer,8.5,2026-03-03,Placed,Nivetha S,2026-03-27
+STU0099,Aisha,Python Full Stack Development,Amazon,Software Engineer,12.0,2026-03-01,In Progress,Nivetha S,2026-04-03
+STU0100,Ajay,Python Full Stack Development,HCL,System Engineer,13.1,2026-03-23,In Progress,Nivetha S,2026-04-10
+STU0101,Zara,MERN Stack Development,Accenture,Data Analyst,9.3,2026-03-23,Placed,Nivetha S,2026-04-17
+STU0102,Farhan,React Frontend Developer,Cognizant,AI Engineer,16.0,2026-03-20,In Progress,Nivetha S,2026-04-24
+STU0103,Sneha,Python Full Stack Development,Google,System Engineer,15.2,2026-03-19,In Progress,Nivetha S,2026-05-01
+STU0104,Irfan,Cyber Security,,,,,Not Placed,,
+STU0105,Sanjay,Python Full Stack Development,TCS,Data Analyst,9.1,2026-03-17,In Progress,Nivetha S,2026-05-08
+STU0106,Aisha,Python Full Stack Development,,,,,Not Placed,,
+STU0107,Faisal,MERN Stack Development,Cognizant,System Engineer,8.3,2026-03-02,In Progress,Nivetha S,2026-05-15
+STU0108,Harsha,Data Science with Python,Accenture,AI Engineer,4.4,2026-03-15,Placed,Nivetha S,2026-05-22
+STU0109,Rahul,MERN Stack Development,Google,Cloud Engineer,12.8,2026-03-06,Placed,Nivetha S,2026-05-29
+STU0110,Rohit,Python Full Stack Development,Google,System Engineer,15.2,2026-03-27,Placed,Nivetha S,2026-06-05
+STU0111,Anjali,React Frontend Developer,,,,,Not Placed,,
+STU0112,Keerthi,MERN Stack Development,,,,,Not Placed,,
+STU0113,Keerthi,React Frontend Developer,Amazon,Cloud Engineer,5.4,2026-03-22,Placed,Nivetha S,2026-06-12
+STU0114,Pooja,MERN Stack Development,Capgemini,Developer,17.8,2026-03-12,Placed,Nivetha S,2026-06-19
+STU0115,Imran,DevOps,,,,,Not Placed,,
+STU0116,Rahul,React Frontend Developer,Zoho,Data Analyst,11.0,2026-03-14,Placed,Nivetha S,2026-06-26
+STU0117,Rohit,Python Full Stack Development,HCL,Software Engineer,6.2,2026-03-21,In Progress,Nivetha S,2026-07-03
+STU0118,Divya,Data Science with Python,Wipro,AI Engineer,20.0,2026-03-16,Placed,Nivetha S,2026-07-10
+STU0119,Imran,Python Full Stack Development,,,,,Not Placed,,
+STU0120,Reshma,Data Science with Python,HCL,System Engineer,15.5,2026-03-28,Placed,Nivetha S,2026-07-17
+STU0121,Meena,Data Science with Python,Google,System Engineer,16.3,2026-03-06,In Progress,Nivetha S,2026-07-24
+STU0122,Anjali,Python Full Stack Development,Flipkart,QA Engineer,18.8,2026-03-18,In Progress,Nivetha S,2026-07-31
+STU0123,Faisal,React Frontend Developer,,,,,Not Placed,,
+STU0124,Rohit,Data Science with Python,Zoho,Cloud Engineer,10.9,2026-03-10,Placed,Nivetha S,2026-08-07
+STU0125,Faisal,Data Science with Python,,,,,Not Placed,,
+STU0126,Arjun,Data Science with Python,,,,,Not Placed,,
+STU0127,Ajay,Data Science with Python,HCL,AI Engineer,3.0,2026-03-28,Placed,Nivetha S,2026-08-14
+STU0128,Imran,Python Full Stack Development,Zoho,AI Engineer,6.5,2026-03-13,In Progress,Nivetha S,2026-08-21
+STU0129,Farhan,DevOps,Amazon,QA Engineer,12.0,2026-03-17,Placed,Nivetha S,2026-08-28
+STU0130,Naveen,MERN Stack Development,TCS,System Engineer,2.5,2026-03-06,In Progress,Nivetha S,2026-09-04
+STU0131,Rahul,Data Science with Python,Accenture,QA Engineer,15.2,2026-03-04,Placed,Nivetha S,2026-09-11
+STU0132,Irfan,React Frontend Developer,,,,,Not Placed,,
+STU0133,Meena,Data Science with Python,Google,Cloud Engineer,7.5,2026-03-09,Placed,Nivetha S,2026-09-18
+STU0134,Divya,Data Science with Python,,,,,Not Placed,,
+STU0135,Tanya,Data Science with Python,,,,,Not Placed,,
+STU0136,Arjun,Data Science with Python,Google,Cloud Engineer,16.3,2026-03-21,In Progress,Nivetha S,2026-09-25
+STU0137,Rohit,Data Science with Python,Amazon,System Engineer,10.0,2026-03-17,In Progress,Nivetha S,2026-10-02
+STU0138,Reshma,Data Science with Python,Google,Data Analyst,7.2,2026-03-26,In Progress,Nivetha S,2026-10-09
+STU0139,Meena,Python Full Stack Development,Cognizant,Cloud Engineer,16.5,2026-03-01,Placed,Nivetha S,2026-10-16
+STU0140,Faisal,Python Full Stack Development,,,,,Not Placed,,
+STU0141,Imran,Data Science with Python,,,,,Not Placed,,
+STU0142,Naveen,Data Science with Python,Wipro,Developer,16.2,2026-03-21,In Progress,Nivetha S,2026-10-23
+STU0143,Zara,React Frontend Developer,TCS,Developer,15.7,2026-03-15,In Progress,Nivetha S,2026-10-30
+STU0144,Irfan,Data Science with Python,,,,,Not Placed,,
+STU0145,Meena,Flutter Development,TCS,AI Engineer,2.6,2026-03-15,In Progress,Nivetha S,2026-11-06
+STU0146,Arjun,MERN Stack Development,Zoho,QA Engineer,7.5,2026-03-28,Placed,Nivetha S,2026-11-13
+STU0147,Sahil,UI/UX Design,Accenture,Data Analyst,19.5,2026-03-15,In Progress,Nivetha S,2026-11-20
+STU0148,Sneha,MERN Stack Development,,,,,Not Placed,,
+STU0149,Kiran,MERN Stack Development,HCL,Software Engineer,12.5,2026-03-18,In Progress,Nivetha S,2026-11-27
+STU0150,Reshma,Data Science with Python,TCS,QA Engineer,16.3,2026-03-06,In Progress,Nivetha S,2026-12-04
+STU0151,Kiran,Data Science with Python,,,,,Not Placed,,
+STU0152,Sahil,React Frontend Developer,Google,System Engineer,10.1,2026-03-24,Placed,Nivetha S,2026-12-11
+STU0153,Anjali,React Frontend Developer,,,,,Not Placed,,
+STU0154,Pooja,Data Science with Python,,,,,Not Placed,,
+STU0155,Tanya,Python Full Stack Development,Accenture,AI Engineer,12.4,2026-03-18,Placed,Nivetha S,2026-12-18
+STU0156,Divya,Python Full Stack Development,Flipkart,Data Analyst,15.7,2026-03-09,Placed,Nivetha S,2026-12-25
+STU0157,Anjali,Python Full Stack Development,Infosys,AI Engineer,18.2,2026-03-05,Placed,Nivetha S,2027-01-01
+STU0158,Aman,React Frontend Developer,,,,,Not Placed,,
+STU0159,Harsha,Data Science with Python,Amazon,Developer,11.0,2026-03-21,Placed,Nivetha S,2027-01-08
+STU0160,Imran,Data Science with Python,,,,,Not Placed,,
+STU0161,Aman,React Frontend Developer,TCS,AI Engineer,6.8,2026-03-19,In Progress,Nivetha S,2027-01-15
+STU0162,Faisal,Data Science with Python,HCL,System Engineer,15.9,2026-03-20,Placed,Nivetha S,2027-01-22
+STU0163,Divya,Data Science with Python,Accenture,Cloud Engineer,8.5,2026-03-11,Placed,Nivetha S,2027-01-29
+STU0164,Ajay,Data Science with Python,HCL,Developer,3.1,2026-03-12,Placed,Nivetha S,2027-02-05
+STU0165,Nisha,Python Full Stack Development,,,,,Not Placed,,
+STU0166,Divya,React Frontend Developer,,,,,Not Placed,,
+STU0167,Sanjay,React Frontend Developer,,,,,Not Placed,,
+STU0168,Zara,Cyber Security,Accenture,System Engineer,10.0,2026-03-25,Placed,Nivetha S,2027-02-12
+STU0169,Farhan,Data Science with Python,Capgemini,QA Engineer,3.7,2026-03-03,Placed,Nivetha S,2027-02-19
+STU0170,Naveen,Data Science with Python,,,,,Not Placed,,
+STU0171,Meena,MERN Stack Development,Cognizant,QA Engineer,13.8,2026-03-24,In Progress,Nivetha S,2027-02-26
+STU0172,Pooja,MERN Stack Development,,,,,Not Placed,,
+STU0173,Pooja,Business Analytics,TCS,Software Engineer,3.5,2026-03-19,Placed,Nivetha S,2027-03-05
+STU0174,Arjun,Flutter Development,Zoho,System Engineer,19.8,2026-03-16,Placed,Nivetha S,2027-03-12
+STU0175,Harsha,React Frontend Developer,Accenture,System Engineer,9.1,2026-03-05,In Progress,Nivetha S,2027-03-19
+STU0176,Rahul,Python Full Stack Development,,,,,Not Placed,,
+STU0177,Rahul,Data Science with Python,TCS,Software Engineer,8.3,2026-03-17,In Progress,Nivetha S,2027-03-26
+STU0178,Ajay,Data Science with Python,,,,,Not Placed,,
+STU0179,Irfan,Python Full Stack Development,,,,,Not Placed,,
+STU0180,Varun,Data Science with Python,Accenture,System Engineer,10.7,2026-03-16,In Progress,Nivetha S,2027-04-02
+STU0181,Ajay,DevOps,Cognizant,Data Analyst,8.9,2026-03-01,In Progress,Nivetha S,2027-04-09
+STU0182,Naveen,Data Science with Python,Infosys,QA Engineer,6.3,2026-03-14,In Progress,Nivetha S,2027-04-16
+STU0183,Tanya,Data Science with Python,Infosys,System Engineer,14.7,2026-03-12,In Progress,Nivetha S,2027-04-23
+STU0184,Farhan,Data Science with Python,HCL,Developer,5.2,2026-03-03,Placed,Nivetha S,2027-04-30
+STU0185,Tanya,Data Science with Python,,,,,Not Placed,,
+STU0186,Manoj,Cyber Security,Wipro,Data Analyst,5.9,2026-03-20,In Progress,Nivetha S,2027-05-07
+STU0187,Sneha,Data Science with Python,Cognizant,System Engineer,5.5,2026-03-08,Placed,Nivetha S,2027-05-14
+STU0188,Faisal,Data Science with Python,Amazon,Data Analyst,4.2,2026-03-04,In Progress,Nivetha S,2027-05-21
+STU0189,Varun,Data Science with Python,Cognizant,Software Engineer,6.6,2026-03-14,Placed,Nivetha S,2027-05-28
+STU0190,Sneha,Business Analytics,Cognizant,Developer,12.2,2026-03-12,In Progress,Nivetha S,2027-06-04
+STU0191,Rahul,Flutter Development,Amazon,Data Analyst,9.2,2026-03-07,Placed,Nivetha S,2027-06-11
+STU0192,Sanjay,React Frontend Developer,Wipro,Developer,8.6,2026-03-07,Placed,Nivetha S,2027-06-18
+STU0193,Divya,Python Full Stack Development,Wipro,QA Engineer,16.7,2026-03-15,In Progress,Nivetha S,2027-06-25
+STU0194,Rahul,Data Science with Python,Wipro,Developer,18.6,2026-03-27,Placed,Nivetha S,2027-07-02
+STU0195,Aman,Data Science with Python,Amazon,Software Engineer,16.8,2026-03-01,In Progress,Nivetha S,2027-07-09
+STU0196,Aisha,UI/UX Design,Capgemini,QA Engineer,8.5,2026-03-03,Placed,Nivetha S,2027-07-16
+STU0197,Aisha,Data Science with Python,Amazon,Developer,17.8,2026-03-09,In Progress,Nivetha S,2027-07-23
+STU0198,Sahil,React Frontend Developer,,,,,Not Placed,,
+STU0199,Imran,Data Science with Python,Google,Developer,4.1,2026-03-19,Placed,Nivetha S,2027-07-30
+STU0200,Nisha,Python Full Stack Development,Zoho,Data Analyst,4.3,2026-03-05,In Progress,Nivetha S,2027-08-06
