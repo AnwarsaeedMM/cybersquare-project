@@ -1,0 +1,475 @@
+admission_id,student_id,student_name,mobile_no,email,location,qualification,course,mode,admission_date,attended_by,status
+ADM0001,STU0001,Kiran,9765861654,kiran1@gmail.com,Palakkad,Working Professional,MERN Stack Development,Offline,1/2/2025,Shivaprasad,Admitted
+ADM0002,STU0002,Tanya,9699233469,tanya2@gmail.com,Palakkad,UG,Data Science with Python,Offline,1/2/2025,Baiju,Admitted
+ADM0003,STU0003,Faisal,9190014738,faisal3@gmail.com,Palakkad,Working Professional,Data Science with Python,Online,1/2/2025,Rifana,Admitted
+ADM0004,STU0004,Ajay,9819774813,ajay4@gmail.com,Kottayam,UG,Python Full Stack Development,Online,1/2/2025,Praveena,Admitted
+ADM0005,STU0005,Rahul,9385106179,rahul5@gmail.com,Kottayam,PG,MERN Stack Development,Offline,1/3/2025,Baiju,Admitted
+ADM0006,STU0006,Arjun,9655011497,arjun6@gmail.com,Kannur,UG,DevOps,Offline,1/4/2025,Baiju,Admitted
+ADM0007,STU0007,Irfan,9443497409,irfan7@gmail.com,Kannur,PG,React Frontend Developer,Online,1/5/2025,Baiju,Admitted
+ADM0008,STU0008,Neeraj,9390140788,neeraj8@gmail.com,Thrissur,UG,Python Full Stack Development,Offline,1/5/2025,Baiju,Admitted
+ADM0009,STU0009,Anjali,9327174723,anjali9@gmail.com,Palakkad,UG,Business Analytics,Offline,1/5/2025,Praveena,Admitted
+ADM0010,STU0010,Neeraj,9886055252,neeraj10@gmail.com,Kannur,UG,MERN Stack Development,Online,1/6/2025,Shivaprasad,Admitted
+ADM0011,STU0011,Rahul,9202267460,rahul11@gmail.com,Thrissur,UG,DevOps,Offline,1/7/2025,Shivaprasad,Admitted
+ADM0012,STU0012,Sahil,9777110782,sahil12@gmail.com,Trivandrum,Working Professional,Python Full Stack Development,Offline,1/7/2025,Rifana,Admitted
+ADM0013,STU0013,Divya,9281057016,divya13@gmail.com,Thrissur,Working Professional,Python Full Stack Development,Offline,1/8/2025,Praveena,Admitted
+ADM0014,STU0014,Tanya,9383351774,tanya14@gmail.com,Kannur,UG,Flutter Development,Offline,1/8/2025,Praveena,Admitted
+ADM0015,STU0015,Divya,9516749784,divya15@gmail.com,Kannur,UG,Python Full Stack Development,Offline,1/8/2025,Baiju,Admitted
+ADM0016,STU0016,Keerthi,9171524227,keerthi16@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,1/8/2025,Shivaprasad,Admitted
+ADM0017,STU0017,Imran,9967330816,imran17@gmail.com,Palakkad,UG,Data Science with Python,Offline,1/8/2025,Rifana,Admitted
+ADM0018,STU0018,Arjun,9458942659,arjun18@gmail.com,Trivandrum,Working Professional,Python Full Stack Development,Offline,1/8/2025,Praveena,Admitted
+ADM0019,STU0019,Pooja,9366291829,pooja19@gmail.com,Thrissur,UG,Python Full Stack Development,Offline,1/11/2025,Rifana,Admitted
+ADM0020,STU0020,Meena,9426161752,meena20@gmail.com,Thrissur,PG,MERN Stack Development,Offline,1/12/2025,Praveena,Admitted
+ADM0021,STU0021,Tanya,9957527291,tanya21@gmail.com,Calicut,UG,Python Full Stack Development,Offline,1/12/2025,Rifana,Admitted
+ADM0022,STU0022,Arjun,9668048638,arjun22@gmail.com,Thrissur,UG,Python Full Stack Development,Online,1/12/2025,Praveena,Admitted
+ADM0023,STU0023,Divya,9308519616,divya23@gmail.com,Calicut,UG,Data Science with Python,Online,1/12/2025,Baiju,Admitted
+ADM0024,STU0024,Aman,9602548575,aman24@gmail.com,Calicut,PG,MERN Stack Development,Offline,1/13/2025,Rifana,Admitted
+ADM0025,STU0025,Reshma,9163040928,reshma25@gmail.com,Trivandrum,PG,React Frontend Developer,Offline,1/13/2025,Rifana,Admitted
+ADM0026,STU0026,Nisha,9637363422,nisha26@gmail.com,Thrissur,UG,Data Science with Python,Offline,1/13/2025,Shivaprasad,Admitted
+ADM0027,STU0027,Vivek,9418075097,vivek27@gmail.com,Kottayam,UG,Data Science with Python,Online,1/14/2025,Rifana,Admitted
+ADM0028,STU0028,Rahul,9441551780,rahul28@gmail.com,Kottayam,UG,React Frontend Developer,Offline,1/15/2025,Shivaprasad,Admitted
+ADM0029,STU0029,Sanjay,9119522639,sanjay29@gmail.com,Calicut,UG,Python Full Stack Development,Offline,1/15/2025,Rifana,Admitted
+ADM0030,STU0030,Zara,9333689288,zara30@gmail.com,Thrissur,UG,Data Science with Python,Offline,1/15/2025,Praveena,Admitted
+ADM0031,STU0031,Sahil,9152745255,sahil31@gmail.com,Palakkad,UG,Data Science with Python,Offline,1/15/2025,Shivaprasad,Admitted
+ADM0032,STU0032,Arjun,9529660555,arjun32@gmail.com,Thrissur,UG,Data Science with Python,Offline,1/15/2025,Praveena,Admitted
+ADM0033,STU0033,Aisha,9809785326,aisha33@gmail.com,Trivandrum,UG,Data Science with Python,Offline,1/16/2025,Praveena,Admitted
+ADM0034,STU0034,John,9728911147,john34@gmail.com,Kottayam,UG,React Frontend Developer,Offline,1/16/2025,Baiju,Admitted
+ADM0035,STU0035,Faisal,9252730416,faisal35@gmail.com,Calicut,UG,Data Science with Python,Offline,1/16/2025,Rifana,Admitted
+ADM0036,STU0036,Tanya,9776119601,tanya36@gmail.com,Trivandrum,UG,React Frontend Developer,Online,1/16/2025,Rifana,Admitted
+ADM0037,STU0037,Aman,9216936580,aman37@gmail.com,Kottayam,UG,Data Science with Python,Offline,1/17/2025,Praveena,Admitted
+ADM0038,STU0038,Farhan,9309444484,farhan38@gmail.com,Kannur,UG,Cyber Security,Offline,1/17/2025,Praveena,Admitted
+ADM0039,STU0039,Kiran,9249435404,kiran39@gmail.com,Calicut,PG,Data Science with Python,Offline,1/19/2025,Rifana,Admitted
+ADM0040,STU0040,Harsha,9978794474,harsha40@gmail.com,Trivandrum,UG,Data Science with Python,Offline,1/20/2025,Rifana,Admitted
+ADM0041,STU0041,Sahil,9439007882,sahil41@gmail.com,Calicut,PG,MERN Stack Development,Offline,1/20/2025,Praveena,Admitted
+ADM0042,STU0042,Aisha,9240124428,aisha42@gmail.com,Calicut,UG,Data Science with Python,Offline,1/20/2025,Praveena,Admitted
+ADM0043,STU0043,Imran,9743804648,imran43@gmail.com,Kottayam,UG,Data Science with Python,Offline,1/21/2025,Praveena,Admitted
+ADM0044,STU0044,Rahul,9416809411,rahul44@gmail.com,Kottayam,UG,MERN Stack Development,Online,1/21/2025,Rifana,Admitted
+ADM0045,STU0045,Aman,9898226091,aman45@gmail.com,Thrissur,UG,Data Science with Python,Offline,1/22/2025,Rifana,Admitted
+ADM0046,STU0046,John,9866245638,john46@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,1/22/2025,Shivaprasad,Admitted
+ADM0047,STU0047,John,9343779187,john47@gmail.com,Thrissur,UG,MERN Stack Development,Online,1/22/2025,Praveena,Admitted
+ADM0048,STU0048,Zara,9840865935,zara48@gmail.com,Palakkad,UG,DevOps,Offline,1/22/2025,Rifana,Admitted
+ADM0049,STU0049,Nisha,9213215254,nisha49@gmail.com,Kottayam,UG,React Frontend Developer,Offline,1/23/2025,Shivaprasad,Admitted
+ADM0050,STU0050,Sahil,9557128404,sahil50@gmail.com,Kochi,UG,MERN Stack Development,Offline,1/23/2025,Baiju,Admitted
+ADM0051,STU0051,Aisha,9374283002,aisha51@gmail.com,Palakkad,UG,MERN Stack Development,Offline,1/24/2025,Praveena,Admitted
+ADM0052,STU0052,Arjun,9993219202,arjun52@gmail.com,Kochi,PG,Data Science with Python,Offline,1/24/2025,Praveena,Admitted
+ADM0053,STU0053,Aman,9616432805,aman53@gmail.com,Trivandrum,UG,Python Full Stack Development,Online,1/24/2025,Baiju,Admitted
+ADM0054,STU0054,Faisal,9624256292,faisal54@gmail.com,Palakkad,UG,Data Science with Python,Online,1/25/2025,Praveena,Admitted
+ADM0055,STU0055,Tanya,9863653930,tanya55@gmail.com,Palakkad,UG,Data Science with Python,Offline,1/25/2025,Rifana,Admitted
+ADM0056,STU0056,Aisha,9273302551,aisha56@gmail.com,Trivandrum,UG,Data Science with Python,Offline,1/25/2025,Rifana,Admitted
+ADM0057,STU0057,Aisha,9647080386,aisha57@gmail.com,Trivandrum,PG,MERN Stack Development,Offline,1/25/2025,Rifana,Admitted
+ADM0058,STU0058,Aisha,9745617582,aisha58@gmail.com,Calicut,UG,React Frontend Developer,Offline,1/25/2025,Rifana,Admitted
+ADM0059,STU0059,Faisal,9114612881,faisal59@gmail.com,Kottayam,UG,Python Full Stack Development,Online,1/26/2025,Baiju,Admitted
+ADM0060,STU0060,Harsha,9681032020,harsha60@gmail.com,Kannur,UG,MERN Stack Development,Online,1/26/2025,Baiju,Admitted
+ADM0061,STU0061,Kiran,9992409832,kiran61@gmail.com,Trivandrum,UG,MERN Stack Development,Online,1/26/2025,Shivaprasad,Admitted
+ADM0062,STU0062,Nisha,9821593793,nisha62@gmail.com,Thrissur,UG,Data Science with Python,Online,1/27/2025,Rifana,Admitted
+ADM0063,STU0063,Neeraj,9144278390,neeraj63@gmail.com,Calicut,UG,React Frontend Developer,Online,1/28/2025,Shivaprasad,Admitted
+ADM0064,STU0064,Farhan,9381191864,farhan64@gmail.com,Thrissur,PG,Python Full Stack Development,Offline,1/28/2025,Shivaprasad,Admitted
+ADM0065,STU0065,Farhan,9989295830,farhan65@gmail.com,Trivandrum,PG,DevOps,Offline,2/1/2025,Rifana,Admitted
+ADM0066,STU0066,Pooja,9239423506,pooja66@gmail.com,Calicut,Working Professional,MERN Stack Development,Offline,2/2/2025,Shivaprasad,Admitted
+ADM0067,STU0067,Tanya,9929454493,tanya67@gmail.com,Calicut,UG,Python Full Stack Development,Offline,2/3/2025,Shivaprasad,Admitted
+ADM0068,STU0068,Naveen,9555315633,naveen68@gmail.com,Thrissur,UG,Python Full Stack Development,Offline,2/3/2025,Rifana,Admitted
+ADM0069,STU0069,Vivek,9289333975,vivek69@gmail.com,Calicut,UG,MERN Stack Development,Offline,2/3/2025,Shivaprasad,Admitted
+ADM0070,STU0070,Varun,9807197552,varun70@gmail.com,Kottayam,PG,Python Full Stack Development,Offline,2/3/2025,Praveena,Admitted
+ADM0071,STU0071,Harsha,9876623285,harsha71@gmail.com,Thrissur,Working Professional,Data Science with Python,Offline,2/3/2025,Baiju,Admitted
+ADM0072,STU0072,Kiran,9673203752,kiran72@gmail.com,Thrissur,UG,Cyber Security,Offline,2/3/2025,Shivaprasad,Admitted
+ADM0073,STU0073,Sanjay,9563676405,sanjay73@gmail.com,Kottayam,UG,MERN Stack Development,Offline,2/4/2025,Praveena,Admitted
+ADM0074,STU0074,Reshma,9897098855,reshma74@gmail.com,Thrissur,PG,MERN Stack Development,Offline,2/4/2025,Rifana,Admitted
+ADM0075,STU0075,Aman,9476416458,aman75@gmail.com,Calicut,UG,Python Full Stack Development,Offline,2/5/2025,Rifana,Admitted
+ADM0076,STU0076,Anjali,9961897856,anjali76@gmail.com,Palakkad,UG,Business Analytics,Offline,2/6/2025,Praveena,Admitted
+ADM0077,STU0077,Manoj,9277634952,manoj77@gmail.com,Trivandrum,PG,MERN Stack Development,Offline,2/6/2025,Praveena,Admitted
+ADM0078,STU0078,Aisha,9907821728,aisha78@gmail.com,Kannur,UG,MERN Stack Development,Offline,2/6/2025,Praveena,Admitted
+ADM0079,STU0079,Farhan,9494044428,farhan79@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,2/6/2025,Rifana,Admitted
+ADM0080,STU0080,John,9885625741,john80@gmail.com,Kannur,Working Professional,Data Science with Python,Online,2/7/2025,Rifana,Admitted
+ADM0081,STU0081,Sanjay,9689071265,sanjay81@gmail.com,Thrissur,UG,Python Full Stack Development,Offline,2/7/2025,Baiju,Admitted
+ADM0082,STU0082,Anjali,9150501860,anjali82@gmail.com,Trivandrum,UG,Data Science with Python,Offline,2/7/2025,Baiju,Admitted
+ADM0083,STU0083,John,9706815564,john83@gmail.com,Trivandrum,Working Professional,Cyber Security,Online,2/8/2025,Baiju,Admitted
+ADM0084,STU0084,Rohit,9888840285,rohit84@gmail.com,Kannur,UG,Python Full Stack Development,Offline,2/8/2025,Rifana,Admitted
+ADM0085,STU0085,Sanjay,9210227903,sanjay85@gmail.com,Kochi,PG,Data Science with Python,Online,2/8/2025,Shivaprasad,Admitted
+ADM0086,STU0086,Kiran,9882002112,kiran86@gmail.com,Palakkad,Working Professional,React Frontend Developer,Online,2/9/2025,Shivaprasad,Admitted
+ADM0087,STU0087,Manoj,9568814176,manoj87@gmail.com,Kottayam,UG,Data Science with Python,Online,2/9/2025,Praveena,Admitted
+ADM0088,STU0088,Sneha,9666716458,sneha88@gmail.com,Kannur,UG,Data Science with Python,Offline,2/9/2025,Shivaprasad,Admitted
+ADM0089,STU0089,Anjali,9152393399,anjali89@gmail.com,Calicut,PG,Data Science with Python,Offline,2/9/2025,Rifana,Admitted
+ADM0090,STU0090,Sanjay,9244193821,sanjay90@gmail.com,Trivandrum,UG,Cyber Security,Offline,2/9/2025,Praveena,Admitted
+ADM0091,STU0091,Vivek,9804470936,vivek91@gmail.com,Trivandrum,PG,Data Science with Python,Offline,2/10/2025,Rifana,Admitted
+ADM0092,STU0092,Ajay,9968150269,ajay92@gmail.com,Trivandrum,PG,Python Full Stack Development,Offline,2/10/2025,Baiju,Admitted
+ADM0093,STU0093,Meena,9945990103,meena93@gmail.com,Trivandrum,UG,DevOps,Offline,2/10/2025,Baiju,Admitted
+ADM0094,STU0094,Imran,9768139011,imran94@gmail.com,Calicut,UG,Data Science with Python,Offline,2/11/2025,Shivaprasad,Admitted
+ADM0095,STU0095,Faisal,9913422489,faisal95@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,2/11/2025,Baiju,Admitted
+ADM0096,STU0096,Naveen,9812971225,naveen96@gmail.com,Kochi,PG,React Frontend Developer,Offline,2/11/2025,Baiju,Admitted
+ADM0097,STU0097,Pooja,9143082425,pooja97@gmail.com,Palakkad,UG,React Frontend Developer,Offline,2/11/2025,Rifana,Admitted
+ADM0098,STU0098,Irfan,9713521320,irfan98@gmail.com,Kottayam,PG,React Frontend Developer,Offline,2/11/2025,Shivaprasad,Admitted
+ADM0099,STU0099,Aisha,9724222183,aisha99@gmail.com,Palakkad,UG,Python Full Stack Development,Offline,2/12/2025,Praveena,Admitted
+ADM0100,STU0100,Ajay,9925251223,ajay100@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,2/12/2025,Shivaprasad,Admitted
+ADM0101,STU0101,Zara,9246396014,zara101@gmail.com,Trivandrum,UG,MERN Stack Development,Offline,2/12/2025,Praveena,Admitted
+ADM0102,STU0102,Farhan,9229149122,farhan102@gmail.com,Kannur,UG,React Frontend Developer,Offline,2/12/2025,Rifana,Admitted
+ADM0103,STU0103,Sneha,9309104956,sneha103@gmail.com,Trivandrum,UG,Python Full Stack Development,Offline,2/13/2025,Praveena,Admitted
+ADM0104,STU0104,Irfan,9356041201,irfan104@gmail.com,Kochi,UG,Cyber Security,Offline,2/14/2025,Praveena,Admitted
+ADM0105,STU0105,Sanjay,9402864945,sanjay105@gmail.com,Trivandrum,UG,Python Full Stack Development,Offline,2/14/2025,Rifana,Admitted
+ADM0106,STU0106,Aisha,9923448978,aisha106@gmail.com,Kannur,UG,Python Full Stack Development,Offline,2/14/2025,Praveena,Admitted
+ADM0107,STU0107,Faisal,9794012028,faisal107@gmail.com,Kochi,PG,MERN Stack Development,Online,2/14/2025,Praveena,Admitted
+ADM0108,STU0108,Harsha,9104925118,harsha108@gmail.com,Calicut,UG,Data Science with Python,Offline,2/14/2025,Praveena,Admitted
+ADM0109,STU0109,Rahul,9999967711,rahul109@gmail.com,Palakkad,Working Professional,MERN Stack Development,Offline,2/14/2025,Rifana,Admitted
+ADM0110,STU0110,Rohit,9449610065,rohit110@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,2/15/2025,Praveena,Admitted
+ADM0111,STU0111,Anjali,9466017386,anjali111@gmail.com,Thrissur,UG,React Frontend Developer,Offline,2/15/2025,Praveena,Admitted
+ADM0112,STU0112,Keerthi,9364293483,keerthi112@gmail.com,Thrissur,UG,MERN Stack Development,Offline,2/15/2025,Rifana,Admitted
+ADM0113,STU0113,Keerthi,9734380686,keerthi113@gmail.com,Calicut,PG,React Frontend Developer,Offline,2/16/2025,Rifana,Admitted
+ADM0114,STU0114,Pooja,9136134772,pooja114@gmail.com,Kottayam,UG,MERN Stack Development,Offline,2/16/2025,Baiju,Admitted
+ADM0115,STU0115,Imran,9676926504,imran115@gmail.com,Kannur,Working Professional,DevOps,Offline,2/18/2025,Rifana,Admitted
+ADM0116,STU0116,Rahul,9128630753,rahul116@gmail.com,Kottayam,UG,React Frontend Developer,Offline,2/18/2025,Baiju,Admitted
+ADM0117,STU0117,Rohit,9217586100,rohit117@gmail.com,Trivandrum,Working Professional,Python Full Stack Development,Offline,2/18/2025,Baiju,Admitted
+ADM0118,STU0118,Divya,9408000073,divya118@gmail.com,Kottayam,UG,Data Science with Python,Offline,2/18/2025,Shivaprasad,Admitted
+ADM0119,STU0119,Imran,9665879198,imran119@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,2/18/2025,Rifana,Admitted
+ADM0120,STU0120,Reshma,9554401329,reshma120@gmail.com,Palakkad,UG,Data Science with Python,Offline,2/19/2025,Praveena,Admitted
+ADM0121,STU0121,Meena,9352851720,meena121@gmail.com,Calicut,PG,Data Science with Python,Offline,2/19/2025,Shivaprasad,Admitted
+ADM0122,STU0122,Anjali,9240013312,anjali122@gmail.com,Calicut,UG,Python Full Stack Development,Offline,2/19/2025,Praveena,Admitted
+ADM0123,STU0123,Faisal,9721124699,faisal123@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,2/19/2025,Praveena,Admitted
+ADM0124,STU0124,Rohit,9643371948,rohit124@gmail.com,Kannur,UG,Data Science with Python,Online,2/20/2025,Rifana,Admitted
+ADM0125,STU0125,Faisal,9295122562,faisal125@gmail.com,Kannur,PG,Data Science with Python,Online,2/20/2025,Shivaprasad,Admitted
+ADM0126,STU0126,Arjun,9839801128,arjun126@gmail.com,Kochi,UG,Data Science with Python,Offline,2/21/2025,Rifana,Admitted
+ADM0127,STU0127,Ajay,9662506287,ajay127@gmail.com,Thrissur,UG,Data Science with Python,Online,2/21/2025,Rifana,Admitted
+ADM0128,STU0128,Imran,9755325042,imran128@gmail.com,Thrissur,PG,Python Full Stack Development,Online,2/21/2025,Shivaprasad,Admitted
+ADM0129,STU0129,Farhan,9774234023,farhan129@gmail.com,Thrissur,12th,DevOps,Offline,2/22/2025,Praveena,Admitted
+ADM0130,STU0130,Naveen,9240469282,naveen130@gmail.com,Trivandrum,UG,MERN Stack Development,Online,2/22/2025,Rifana,Admitted
+ADM0131,STU0131,Rahul,9370211113,rahul131@gmail.com,Thrissur,UG,Data Science with Python,Online,2/22/2025,Rifana,Admitted
+ADM0132,STU0132,Irfan,9479034853,irfan132@gmail.com,Thrissur,UG,React Frontend Developer,Offline,2/23/2025,Rifana,Admitted
+ADM0133,STU0133,Meena,9829456631,meena133@gmail.com,Kottayam,UG,Data Science with Python,Offline,2/23/2025,Rifana,Admitted
+ADM0134,STU0134,Divya,9602079267,divya134@gmail.com,Kochi,UG,Data Science with Python,Offline,2/23/2025,Praveena,Admitted
+ADM0135,STU0135,Tanya,9984928559,tanya135@gmail.com,Thrissur,UG,Data Science with Python,Offline,2/24/2025,Baiju,Admitted
+ADM0136,STU0136,Arjun,9443149241,arjun136@gmail.com,Palakkad,UG,Data Science with Python,Offline,2/24/2025,Shivaprasad,Admitted
+ADM0137,STU0137,Rohit,9183330955,rohit137@gmail.com,Kannur,PG,Data Science with Python,Offline,2/25/2025,Shivaprasad,Admitted
+ADM0138,STU0138,Reshma,9855675602,reshma138@gmail.com,Kottayam,UG,Data Science with Python,Offline,2/25/2025,Baiju,Admitted
+ADM0139,STU0139,Meena,9260870454,meena139@gmail.com,Kochi,PG,Python Full Stack Development,Offline,2/25/2025,Baiju,Admitted
+ADM0140,STU0140,Faisal,9654288413,faisal140@gmail.com,Kochi,Working Professional,Python Full Stack Development,Offline,2/25/2025,Rifana,Admitted
+ADM0141,STU0141,Imran,9181515660,imran141@gmail.com,Calicut,UG,Data Science with Python,Offline,2/25/2025,Baiju,Admitted
+ADM0142,STU0142,Naveen,9562266118,naveen142@gmail.com,Trivandrum,UG,Data Science with Python,Offline,2/25/2025,Baiju,Admitted
+ADM0143,STU0143,Zara,9119947911,zara143@gmail.com,Kannur,Working Professional,React Frontend Developer,Offline,2/26/2025,Praveena,Admitted
+ADM0144,STU0144,Irfan,9840996710,irfan144@gmail.com,Kannur,UG,Data Science with Python,Offline,2/26/2025,Praveena,Admitted
+ADM0145,STU0145,Meena,9555798938,meena145@gmail.com,Calicut,UG,Flutter Development,Online,2/26/2025,Shivaprasad,Admitted
+ADM0146,STU0146,Arjun,9180146388,arjun146@gmail.com,Kannur,Working Professional,MERN Stack Development,Offline,2/26/2025,Shivaprasad,Admitted
+ADM0147,STU0147,Sahil,9165788471,sahil147@gmail.com,Kottayam,UG,UI/UX Design,Offline,2/27/2025,Rifana,Admitted
+ADM0148,STU0148,Sneha,9728403356,sneha148@gmail.com,Kochi,UG,MERN Stack Development,Offline,2/27/2025,Praveena,Admitted
+ADM0149,STU0149,Kiran,9481971984,kiran149@gmail.com,Kottayam,UG,MERN Stack Development,Offline,2/28/2025,Shivaprasad,Admitted
+ADM0150,STU0150,Reshma,9573240892,reshma150@gmail.com,Kottayam,UG,Data Science with Python,Offline,3/1/2025,Shivaprasad,Admitted
+ADM0151,STU0151,Kiran,9825371217,kiran151@gmail.com,Thrissur,UG,Data Science with Python,Offline,3/1/2025,Praveena,Admitted
+ADM0152,STU0152,Sahil,9568454365,sahil152@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,3/2/2025,Shivaprasad,Admitted
+ADM0153,STU0153,Anjali,9590954602,anjali153@gmail.com,Kannur,UG,React Frontend Developer,Online,3/2/2025,Praveena,Admitted
+ADM0154,STU0154,Pooja,9420347644,pooja154@gmail.com,Thrissur,UG,Data Science with Python,Online,3/3/2025,Baiju,Admitted
+ADM0155,STU0155,Tanya,9400167157,tanya155@gmail.com,Thrissur,PG,Python Full Stack Development,Offline,3/3/2025,Shivaprasad,Admitted
+ADM0156,STU0156,Divya,9167097153,divya156@gmail.com,Calicut,Working Professional,Python Full Stack Development,Online,3/4/2025,Praveena,Admitted
+ADM0157,STU0157,Anjali,9698487547,anjali157@gmail.com,Palakkad,UG,Python Full Stack Development,Offline,3/4/2025,Rifana,Admitted
+ADM0158,STU0158,Aman,9985878304,aman158@gmail.com,Trivandrum,UG,React Frontend Developer,Offline,3/5/2025,Praveena,Admitted
+ADM0159,STU0159,Harsha,9665241068,harsha159@gmail.com,Trivandrum,PG,Data Science with Python,Offline,3/5/2025,Rifana,Admitted
+ADM0160,STU0160,Imran,9992954525,imran160@gmail.com,Calicut,UG,Data Science with Python,Offline,3/5/2025,Shivaprasad,Admitted
+ADM0161,STU0161,Aman,9264230155,aman161@gmail.com,Calicut,UG,React Frontend Developer,Offline,3/5/2025,Praveena,Admitted
+ADM0162,STU0162,Faisal,9875926766,faisal162@gmail.com,Palakkad,UG,Data Science with Python,Online,3/6/2025,Shivaprasad,Admitted
+ADM0163,STU0163,Divya,9983131288,divya163@gmail.com,Thrissur,UG,Data Science with Python,Online,3/6/2025,Shivaprasad,Admitted
+ADM0164,STU0164,Ajay,9237489717,ajay164@gmail.com,Kottayam,PG,Data Science with Python,Offline,3/6/2025,Baiju,Admitted
+ADM0165,STU0165,Nisha,9253147568,nisha165@gmail.com,Kottayam,PG,Python Full Stack Development,Offline,3/6/2025,Rifana,Admitted
+ADM0166,STU0166,Divya,9656654872,divya166@gmail.com,Kannur,UG,React Frontend Developer,Offline,3/6/2025,Praveena,Admitted
+ADM0167,STU0167,Sanjay,9793474838,sanjay167@gmail.com,Calicut,UG,React Frontend Developer,Offline,3/6/2025,Rifana,Admitted
+ADM0168,STU0168,Zara,9287356671,zara168@gmail.com,Kottayam,UG,Cyber Security,Offline,3/6/2025,Baiju,Admitted
+ADM0169,STU0169,Farhan,9141803548,farhan169@gmail.com,Palakkad,PG,Data Science with Python,Offline,3/7/2025,Praveena,Admitted
+ADM0170,STU0170,Naveen,9888948452,naveen170@gmail.com,Kottayam,UG,Data Science with Python,Offline,3/7/2025,Praveena,Admitted
+ADM0171,STU0171,Meena,9873003653,meena171@gmail.com,Thrissur,PG,MERN Stack Development,Online,3/7/2025,Baiju,Admitted
+ADM0172,STU0172,Pooja,9575887038,pooja172@gmail.com,Kochi,UG,MERN Stack Development,Offline,3/8/2025,Baiju,Admitted
+ADM0173,STU0173,Pooja,9999941053,pooja173@gmail.com,Thrissur,UG,Business Analytics,Offline,3/8/2025,Baiju,Admitted
+ADM0174,STU0174,Arjun,9166819992,arjun174@gmail.com,Kochi,Working Professional,Flutter Development,Offline,3/8/2025,Baiju,Admitted
+ADM0175,STU0175,Harsha,9726730773,harsha175@gmail.com,Palakkad,PG,React Frontend Developer,Offline,3/8/2025,Praveena,Admitted
+ADM0176,STU0176,Rahul,9359753626,rahul176@gmail.com,Thrissur,UG,Python Full Stack Development,Offline,3/9/2025,Baiju,Admitted
+ADM0177,STU0177,Rahul,9554176647,rahul177@gmail.com,Kannur,UG,Data Science with Python,Online,3/9/2025,Praveena,Admitted
+ADM0178,STU0178,Ajay,9661472247,ajay178@gmail.com,Palakkad,Working Professional,Data Science with Python,Offline,3/9/2025,Rifana,Admitted
+ADM0179,STU0179,Irfan,9222319288,irfan179@gmail.com,Kottayam,Working Professional,Python Full Stack Development,Offline,3/9/2025,Shivaprasad,Admitted
+ADM0180,STU0180,Varun,9752016862,varun180@gmail.com,Thrissur,UG,Data Science with Python,Online,3/10/2025,Rifana,Admitted
+ADM0181,STU0181,Ajay,9592735687,ajay181@gmail.com,Calicut,PG,DevOps,Offline,3/10/2025,Baiju,Admitted
+ADM0182,STU0182,Naveen,9772545829,naveen182@gmail.com,Kochi,UG,Data Science with Python,Offline,3/11/2025,Shivaprasad,Admitted
+ADM0183,STU0183,Tanya,9809171505,tanya183@gmail.com,Trivandrum,UG,Data Science with Python,Offline,3/11/2025,Praveena,Admitted
+ADM0184,STU0184,Farhan,9163349108,farhan184@gmail.com,Trivandrum,UG,Data Science with Python,Offline,3/11/2025,Shivaprasad,Admitted
+ADM0185,STU0185,Tanya,9850406570,tanya185@gmail.com,Palakkad,UG,Data Science with Python,Offline,3/11/2025,Rifana,Admitted
+ADM0186,STU0186,Manoj,9771647980,manoj186@gmail.com,Kottayam,UG,Cyber Security,Offline,3/11/2025,Rifana,Admitted
+ADM0187,STU0187,Sneha,9782059453,sneha187@gmail.com,Kottayam,UG,Data Science with Python,Offline,3/11/2025,Shivaprasad,Admitted
+ADM0188,STU0188,Faisal,9773329969,faisal188@gmail.com,Thrissur,UG,Data Science with Python,Offline,3/12/2025,Baiju,Admitted
+ADM0189,STU0189,Varun,9807225213,varun189@gmail.com,Kochi,UG,Data Science with Python,Offline,3/12/2025,Shivaprasad,Admitted
+ADM0190,STU0190,Sneha,9484370431,sneha190@gmail.com,Calicut,Working Professional,Business Analytics,Offline,3/12/2025,Rifana,Admitted
+ADM0191,STU0191,Rahul,9211039303,rahul191@gmail.com,Kannur,PG,Flutter Development,Offline,3/12/2025,Shivaprasad,Admitted
+ADM0192,STU0192,Sanjay,9377278940,sanjay192@gmail.com,Thrissur,UG,React Frontend Developer,Offline,3/12/2025,Shivaprasad,Admitted
+ADM0193,STU0193,Divya,9611803828,divya193@gmail.com,Kannur,UG,Python Full Stack Development,Offline,3/13/2025,Rifana,Admitted
+ADM0194,STU0194,Rahul,9258932709,rahul194@gmail.com,Palakkad,UG,Data Science with Python,Offline,3/13/2025,Baiju,Admitted
+ADM0195,STU0195,Aman,9519032167,aman195@gmail.com,Calicut,UG,Data Science with Python,Offline,3/13/2025,Rifana,Admitted
+ADM0196,STU0196,Aisha,9155731357,aisha196@gmail.com,Kottayam,UG,UI/UX Design,Offline,3/13/2025,Praveena,Admitted
+ADM0197,STU0197,Aisha,9207351331,aisha197@gmail.com,Kottayam,UG,Data Science with Python,Offline,3/13/2025,Shivaprasad,Admitted
+ADM0198,STU0198,Sahil,9175495299,sahil198@gmail.com,Kochi,Working Professional,React Frontend Developer,Online,3/13/2025,Rifana,Admitted
+ADM0199,STU0199,Imran,9760532260,imran199@gmail.com,Palakkad,UG,Data Science with Python,Online,3/14/2025,Rifana,Admitted
+ADM0200,STU0200,Nisha,9520903431,nisha200@gmail.com,Calicut,UG,Python Full Stack Development,Online,3/14/2025,Praveena,Admitted
+ADM0201,STU0201,Adil Babu,9525034000,adil.babu201@gmail.com,Palakkad,UG,MERN Stack Development,Offline,12/19/2024,Rifana,Not Admitted
+ADM0202,STU0202,Farhan Das,9272996105,farhan.das202@gmail.com,Kochi,Diploma,Digital Marketing,Offline,12/20/2024,Shivaprasad,Not Admitted
+ADM0203,STU0203,Safa Kumar,9491141697,safa.kumar203@gmail.com,Thrissur,UG,DevOps,Offline,12/21/2024,Rifana,Not Admitted
+ADM0204,STU0204,Fida Ali,9472235918,fida.ali204@gmail.com,Palakkad,PG,Python Full Stack Development,Online,12/22/2024,Shivaprasad,Not Admitted
+ADM0205,STU0205,Farhan P,9479006176,farhan.p205@gmail.com,Kottayam,Working Professional,DevOps,Offline,12/23/2024,Rifana,Not Admitted
+ADM0206,STU0206,Sreya K,9712909093,sreya.k206@gmail.com,Palakkad,Diploma,UI/UX Design,Offline,12/24/2024,Baiju,Not Admitted
+ADM0207,STU0207,Ameen Raj,9509029082,ameen.raj207@gmail.com,Palakkad,UG,MERN Stack Development,Offline,12/25/2024,Rifana,Not Admitted
+ADM0208,STU0208,Farhan Kumar,9256577149,farhan.kumar208@gmail.com,Palakkad,UG,MERN Stack Development,Offline,12/26/2024,Praveena,Not Admitted
+ADM0209,STU0209,Safa P,9101581551,safa.p209@gmail.com,Kochi,Diploma,MERN Stack Development,Online,12/27/2024,Rifana,Not Admitted
+ADM0210,STU0210,Riya Ali,9942336547,riya.ali210@gmail.com,Kottayam,PG,DevOps,Offline,12/28/2024,Baiju,Not Admitted
+ADM0211,STU0211,Nihal Ali,9438387178,nihal.ali211@gmail.com,Calicut,PG,Data Science with Python,Offline,12/29/2024,Praveena,Not Admitted
+ADM0212,STU0212,Midhun Das,9833296410,midhun.das212@gmail.com,Kottayam,Diploma,Digital Marketing,Offline,12/30/2024,Praveena,Not Admitted
+ADM0213,STU0213,Nihal Raj,9909239453,nihal.raj213@gmail.com,Kochi,UG,Data Science with Python,Offline,12/31/2024,Shivaprasad,Not Admitted
+ADM0214,STU0214,Nihal Ali,9211363732,nihal.ali214@gmail.com,Kottayam,PG,Python Full Stack Development,Offline,1/1/2025,Baiju,Not Admitted
+ADM0215,STU0215,Farhan K,9802701889,farhan.k215@gmail.com,Kottayam,UG,Digital Marketing,Online,1/2/2025,Baiju,Not Admitted
+ADM0216,STU0216,Sreya Babu,9369574119,sreya.babu216@gmail.com,Trivandrum,PG,Data Science with Python,Offline,1/3/2025,Rifana,Not Admitted
+ADM0217,STU0217,Farhan Kumar,9926808540,farhan.kumar217@gmail.com,Trivandrum,PG,Digital Marketing,Offline,1/4/2025,Rifana,Not Admitted
+ADM0218,STU0218,Farhan Nair,9459838062,farhan.nair218@gmail.com,Kochi,Working Professional,Digital Marketing,Online,1/5/2025,Praveena,Not Admitted
+ADM0219,STU0219,Farhan Kumar,9371049223,farhan.kumar219@gmail.com,Kannur,Working Professional,Python Full Stack Development,Online,1/6/2025,Praveena,Not Admitted
+ADM0220,STU0220,Fida Nair,9543128178,fida.nair220@gmail.com,Palakkad,PG,Digital Marketing,Offline,1/7/2025,Shivaprasad,Not Admitted
+ADM0221,STU0221,Safa Nair,9854681934,safa.nair221@gmail.com,Kottayam,PG,UI/UX Design,Online,1/8/2025,Shivaprasad,Not Admitted
+ADM0222,STU0222,Farhan K,9432432436,farhan.k222@gmail.com,Kochi,UG,MERN Stack Development,Online,1/9/2025,Shivaprasad,Not Admitted
+ADM0223,STU0223,Sreya Raj,9933406955,sreya.raj223@gmail.com,Kannur,PG,DevOps,Online,1/10/2025,Shivaprasad,Not Admitted
+ADM0224,STU0224,Adil Ali,9255170902,adil.ali224@gmail.com,Calicut,UG,Python Full Stack Development,Offline,1/11/2025,Praveena,Not Admitted
+ADM0225,STU0225,Farhan Babu,9565261230,farhan.babu225@gmail.com,Kannur,Working Professional,DevOps,Offline,1/12/2025,Rifana,Not Admitted
+ADM0226,STU0226,Safa Das,9892994780,safa.das226@gmail.com,Thrissur,Working Professional,Data Science with Python,Online,1/13/2025,Shivaprasad,Not Admitted
+ADM0227,STU0227,Nihal K,9239416922,nihal.k227@gmail.com,Kochi,PG,UI/UX Design,Online,1/14/2025,Praveena,Not Admitted
+ADM0228,STU0228,Jasim K,9910842610,jasim.k228@gmail.com,Calicut,Working Professional,Python Full Stack Development,Online,1/15/2025,Rifana,Not Admitted
+ADM0229,STU0229,Nihal K,9280405073,nihal.k229@gmail.com,Palakkad,UG,MERN Stack Development,Online,1/16/2025,Rifana,Not Admitted
+ADM0230,STU0230,Nihal Ali,9154518476,nihal.ali230@gmail.com,Trivandrum,PG,Digital Marketing,Online,1/17/2025,Praveena,Not Admitted
+ADM0231,STU0231,Midhun P,9723793078,midhun.p231@gmail.com,Palakkad,UG,Python Full Stack Development,Online,1/18/2025,Praveena,Not Admitted
+ADM0232,STU0232,Fida P,9652320360,fida.p232@gmail.com,Kottayam,PG,DevOps,Online,1/19/2025,Praveena,Not Admitted
+ADM0233,STU0233,Farhan Kumar,9842020099,farhan.kumar233@gmail.com,Palakkad,UG,Digital Marketing,Offline,1/20/2025,Shivaprasad,Not Admitted
+ADM0234,STU0234,Midhun Babu,9998840579,midhun.babu234@gmail.com,Calicut,Diploma,Python Full Stack Development,Online,1/21/2025,Praveena,Not Admitted
+ADM0235,STU0235,Farhan P,9714792961,farhan.p235@gmail.com,Palakkad,Working Professional,Data Science with Python,Offline,1/22/2025,Rifana,Not Admitted
+ADM0236,STU0236,Safa Das,9330682864,safa.das236@gmail.com,Kochi,UG,Digital Marketing,Online,1/23/2025,Rifana,Not Admitted
+ADM0237,STU0237,Sreya Nair,9533866811,sreya.nair237@gmail.com,Kannur,UG,Digital Marketing,Offline,1/24/2025,Shivaprasad,Not Admitted
+ADM0238,STU0238,Safa Nair,9177431302,safa.nair238@gmail.com,Kannur,Working Professional,DevOps,Offline,1/25/2025,Praveena,Not Admitted
+ADM0239,STU0239,Adil K,9157417781,adil.k239@gmail.com,Thrissur,PG,Python Full Stack Development,Offline,1/26/2025,Praveena,Not Admitted
+ADM0240,STU0240,Ameen Kumar,9952765635,ameen.kumar240@gmail.com,Kottayam,Working Professional,DevOps,Offline,1/27/2025,Shivaprasad,Not Admitted
+ADM0241,STU0241,Riya Nair,9365389696,riya.nair241@gmail.com,Kottayam,Working Professional,Python Full Stack Development,Offline,1/28/2025,Shivaprasad,Not Admitted
+ADM0242,STU0242,Riya K,9646250567,riya.k242@gmail.com,Calicut,UG,DevOps,Offline,1/29/2025,Baiju,Not Admitted
+ADM0243,STU0243,Fida Raj,9253247686,fida.raj243@gmail.com,Thrissur,UG,MERN Stack Development,Offline,1/30/2025,Praveena,Not Admitted
+ADM0244,STU0244,Midhun P,9254097524,midhun.p244@gmail.com,Kochi,PG,Digital Marketing,Online,1/31/2025,Praveena,Not Admitted
+ADM0245,STU0245,Sreya Ali,9486910592,sreya.ali245@gmail.com,Kottayam,Working Professional,DevOps,Offline,2/1/2025,Rifana,Not Admitted
+ADM0246,STU0246,Ameen Ali,9403691898,ameen.ali246@gmail.com,Kannur,Diploma,Data Science with Python,Online,2/2/2025,Baiju,Not Admitted
+ADM0247,STU0247,Sreya K,9869560872,sreya.k247@gmail.com,Calicut,Diploma,MERN Stack Development,Offline,2/3/2025,Baiju,Not Admitted
+ADM0248,STU0248,Ameen Das,9970563869,ameen.das248@gmail.com,Kannur,PG,Data Science with Python,Offline,2/4/2025,Shivaprasad,Not Admitted
+ADM0249,STU0249,Riya Babu,9440943354,riya.babu249@gmail.com,Kottayam,PG,MERN Stack Development,Offline,2/5/2025,Shivaprasad,Not Admitted
+ADM0250,STU0250,Jasim P,9568950969,jasim.p250@gmail.com,Thrissur,Working Professional,Digital Marketing,Online,2/6/2025,Shivaprasad,Not Admitted
+ADM0251,STU0251,Jasim K,9711496632,jasim.k251@gmail.com,Kottayam,UG,Data Science with Python,Offline,2/7/2025,Baiju,Not Admitted
+ADM0252,STU0252,Sreya Raj,9560440210,sreya.raj252@gmail.com,Palakkad,Diploma,UI/UX Design,Offline,2/8/2025,Baiju,Not Admitted
+ADM0253,STU0253,Ameen Kumar,9442295290,ameen.kumar253@gmail.com,Palakkad,PG,DevOps,Offline,2/9/2025,Baiju,Not Admitted
+ADM0254,STU0254,Riya Nair,9703033057,riya.nair254@gmail.com,Palakkad,Working Professional,Data Science with Python,Online,2/10/2025,Rifana,Not Admitted
+ADM0255,STU0255,Ameen K,9263007191,ameen.k255@gmail.com,Kochi,Diploma,DevOps,Online,2/11/2025,Praveena,Not Admitted
+ADM0256,STU0256,Adil Babu,9225945648,adil.babu256@gmail.com,Calicut,Working Professional,UI/UX Design,Offline,2/12/2025,Shivaprasad,Not Admitted
+ADM0257,STU0257,Midhun Ali,9843198755,midhun.ali257@gmail.com,Kochi,Working Professional,Python Full Stack Development,Online,2/13/2025,Rifana,Not Admitted
+ADM0258,STU0258,Jasim Raj,9147125340,jasim.raj258@gmail.com,Kannur,Working Professional,Digital Marketing,Online,2/14/2025,Praveena,Not Admitted
+ADM0259,STU0259,Fida K,9816956583,fida.k259@gmail.com,Kottayam,PG,DevOps,Online,2/15/2025,Praveena,Not Admitted
+ADM0260,STU0260,Adil Babu,9319828581,adil.babu260@gmail.com,Kannur,PG,UI/UX Design,Online,2/16/2025,Shivaprasad,Not Admitted
+ADM0261,STU0261,Sreya Babu,9894230195,sreya.babu261@gmail.com,Thrissur,UG,DevOps,Online,2/17/2025,Shivaprasad,Not Admitted
+ADM0262,STU0262,Nihal K,9106645952,nihal.k262@gmail.com,Thrissur,Working Professional,Digital Marketing,Offline,2/18/2025,Praveena,Not Admitted
+ADM0263,STU0263,Farhan Ali,9675215784,farhan.ali263@gmail.com,Palakkad,PG,DevOps,Online,2/19/2025,Shivaprasad,Not Admitted
+ADM0264,STU0264,Jasim Raj,9609579155,jasim.raj264@gmail.com,Kochi,Diploma,Data Science with Python,Online,2/20/2025,Shivaprasad,Not Admitted
+ADM0265,STU0265,Farhan P,9716214740,farhan.p265@gmail.com,Palakkad,Diploma,Digital Marketing,Offline,2/21/2025,Baiju,Not Admitted
+ADM0266,STU0266,Safa Das,9216195560,safa.das266@gmail.com,Palakkad,Diploma,Python Full Stack Development,Online,2/22/2025,Baiju,Not Admitted
+ADM0267,STU0267,Nihal P,9447669002,nihal.p267@gmail.com,Calicut,PG,UI/UX Design,Offline,2/23/2025,Shivaprasad,Not Admitted
+ADM0268,STU0268,Fida Kumar,9604223570,fida.kumar268@gmail.com,Kochi,Diploma,UI/UX Design,Online,2/24/2025,Shivaprasad,Not Admitted
+ADM0269,STU0269,Ameen K,9558624521,ameen.k269@gmail.com,Kottayam,PG,Digital Marketing,Online,2/25/2025,Rifana,Not Admitted
+ADM0270,STU0270,Farhan Babu,9548420219,farhan.babu270@gmail.com,Calicut,Working Professional,MERN Stack Development,Offline,2/26/2025,Rifana,Not Admitted
+ADM0271,STU0271,Safa Raj,9244135953,safa.raj271@gmail.com,Kannur,Diploma,Data Science with Python,Online,2/27/2025,Shivaprasad,Not Admitted
+ADM0272,STU0272,Safa Ali,9489497030,safa.ali272@gmail.com,Thrissur,PG,UI/UX Design,Offline,2/28/2025,Praveena,Not Admitted
+ADM0273,STU0273,Safa K,9965049596,safa.k273@gmail.com,Trivandrum,PG,DevOps,Online,3/1/2025,Shivaprasad,Not Admitted
+ADM0274,STU0274,Farhan P,9462018262,farhan.p274@gmail.com,Thrissur,Diploma,Data Science with Python,Offline,3/2/2025,Baiju,Not Admitted
+ADM0275,STU0275,Riya P,9602329438,riya.p275@gmail.com,Trivandrum,PG,UI/UX Design,Offline,3/3/2025,Praveena,Not Admitted
+ADM0276,STU0276,Fida Ali,9894917569,fida.ali276@gmail.com,Kochi,Working Professional,DevOps,Online,3/4/2025,Shivaprasad,Not Admitted
+ADM0277,STU0277,Fida Babu,9448551794,fida.babu277@gmail.com,Palakkad,UG,Data Science with Python,Offline,3/5/2025,Rifana,Not Admitted
+ADM0278,STU0278,Safa P,9830904541,safa.p278@gmail.com,Trivandrum,PG,Data Science with Python,Offline,3/6/2025,Praveena,Not Admitted
+ADM0279,STU0279,Midhun Nair,9306815126,midhun.nair279@gmail.com,Kochi,PG,MERN Stack Development,Offline,3/7/2025,Rifana,Not Admitted
+ADM0280,STU0280,Adil Babu,9393497666,adil.babu280@gmail.com,Palakkad,Diploma,UI/UX Design,Online,3/8/2025,Shivaprasad,Not Admitted
+ADM0281,STU0281,Riya Nair,9500421455,riya.nair281@gmail.com,Palakkad,PG,DevOps,Online,3/9/2025,Baiju,Not Admitted
+ADM0282,STU0282,Riya Nair,9450507373,riya.nair282@gmail.com,Kottayam,Diploma,DevOps,Offline,3/10/2025,Rifana,Not Admitted
+ADM0283,STU0283,Ameen Raj,9364919468,ameen.raj283@gmail.com,Palakkad,Working Professional,DevOps,Online,3/11/2025,Praveena,Not Admitted
+ADM0284,STU0284,Nihal K,9391302313,nihal.k284@gmail.com,Thrissur,Working Professional,MERN Stack Development,Offline,3/12/2025,Shivaprasad,Not Admitted
+ADM0285,STU0285,Midhun P,9300206749,midhun.p285@gmail.com,Kochi,Diploma,DevOps,Online,3/13/2025,Shivaprasad,Not Admitted
+ADM0286,STU0286,Ameen Raj,9453526082,ameen.raj286@gmail.com,Trivandrum,Diploma,Digital Marketing,Offline,3/14/2025,Shivaprasad,Not Admitted
+ADM0287,STU0287,Nihal P,9602327871,nihal.p287@gmail.com,Kochi,Diploma,DevOps,Offline,3/15/2025,Shivaprasad,Not Admitted
+ADM0288,STU0288,Jasim Das,9376468677,jasim.das288@gmail.com,Calicut,Diploma,DevOps,Online,3/16/2025,Praveena,Not Admitted
+ADM0289,STU0289,Ameen K,9102535932,ameen.k289@gmail.com,Trivandrum,PG,Data Science with Python,Online,3/17/2025,Shivaprasad,Not Admitted
+ADM0290,STU0290,Adil K,9709328814,adil.k290@gmail.com,Kannur,Working Professional,UI/UX Design,Online,3/18/2025,Baiju,Not Admitted
+ADM0291,STU0291,Midhun Babu,9364497054,midhun.babu291@gmail.com,Trivandrum,PG,Data Science with Python,Offline,3/19/2025,Baiju,Not Admitted
+ADM0292,STU0292,Ameen Raj,9646954092,ameen.raj292@gmail.com,Kochi,Diploma,Python Full Stack Development,Online,3/20/2025,Baiju,Not Admitted
+ADM0293,STU0293,Midhun Raj,9998691895,midhun.raj293@gmail.com,Kochi,Diploma,Digital Marketing,Online,3/21/2025,Praveena,Not Admitted
+ADM0294,STU0294,Nihal Raj,9305000566,nihal.raj294@gmail.com,Palakkad,Diploma,UI/UX Design,Online,3/22/2025,Rifana,Not Admitted
+ADM0295,STU0295,Adil P,9970967907,adil.p295@gmail.com,Kannur,Working Professional,Python Full Stack Development,Offline,3/23/2025,Rifana,Not Admitted
+ADM0296,STU0296,Riya Ali,9603906493,riya.ali296@gmail.com,Palakkad,PG,MERN Stack Development,Offline,3/24/2025,Rifana,Not Admitted
+ADM0297,STU0297,Ameen Das,9241592764,ameen.das297@gmail.com,Kottayam,PG,DevOps,Offline,3/25/2025,Baiju,Not Admitted
+ADM0298,STU0298,Safa Ali,9481964145,safa.ali298@gmail.com,Kannur,PG,UI/UX Design,Online,3/26/2025,Rifana,Not Admitted
+ADM0299,STU0299,Riya K,9315484009,riya.k299@gmail.com,Kannur,PG,DevOps,Online,3/27/2025,Praveena,Not Admitted
+ADM0300,STU0300,Safa Babu,9432865040,safa.babu300@gmail.com,Kannur,UG,UI/UX Design,Online,3/28/2025,Baiju,Not Admitted
+ADM0301,STU0301,Midhun Kumar,9664932888,midhun.kumar301@gmail.com,Trivandrum,Diploma,UI/UX Design,Online,3/29/2025,Baiju,Not Admitted
+ADM0302,STU0302,Midhun Ali,9812431729,midhun.ali302@gmail.com,Kottayam,PG,UI/UX Design,Online,3/30/2025,Shivaprasad,Not Admitted
+ADM0303,STU0303,Midhun K,9681106817,midhun.k303@gmail.com,Kannur,Diploma,MERN Stack Development,Offline,3/31/2025,Shivaprasad,Not Admitted
+ADM0304,STU0304,Farhan Nair,9159124253,farhan.nair304@gmail.com,Calicut,Diploma,Data Science with Python,Online,4/1/2025,Baiju,Not Admitted
+ADM0305,STU0305,Adil Nair,9605453752,adil.nair305@gmail.com,Palakkad,Working Professional,Data Science with Python,Online,4/2/2025,Praveena,Not Admitted
+ADM0306,STU0306,Sreya Kumar,9173104378,sreya.kumar306@gmail.com,Kottayam,Diploma,Python Full Stack Development,Offline,4/3/2025,Rifana,Not Admitted
+ADM0307,STU0307,Fida Raj,9614037315,fida.raj307@gmail.com,Calicut,Diploma,Data Science with Python,Offline,4/4/2025,Shivaprasad,Not Admitted
+ADM0308,STU0308,Nihal P,9780749529,nihal.p308@gmail.com,Kannur,Diploma,DevOps,Online,4/5/2025,Baiju,Not Admitted
+ADM0309,STU0309,Safa Das,9290606730,safa.das309@gmail.com,Thrissur,Working Professional,MERN Stack Development,Online,4/6/2025,Praveena,Not Admitted
+ADM0310,STU0310,Riya P,9205593328,riya.p310@gmail.com,Kochi,Working Professional,Digital Marketing,Online,4/7/2025,Praveena,Not Admitted
+ADM0311,STU0311,Jasim K,9449044716,jasim.k311@gmail.com,Kochi,PG,Digital Marketing,Offline,4/8/2025,Shivaprasad,Not Admitted
+ADM0312,STU0312,Sreya P,9534689839,sreya.p312@gmail.com,Trivandrum,PG,UI/UX Design,Offline,4/9/2025,Praveena,Not Admitted
+ADM0313,STU0313,Nihal Raj,9353847701,nihal.raj313@gmail.com,Trivandrum,UG,MERN Stack Development,Offline,4/10/2025,Baiju,Not Admitted
+ADM0314,STU0314,Sreya Ali,9753102660,sreya.ali314@gmail.com,Thrissur,Diploma,UI/UX Design,Online,4/11/2025,Baiju,Not Admitted
+ADM0315,STU0315,Farhan Babu,9620876698,farhan.babu315@gmail.com,Calicut,PG,Python Full Stack Development,Offline,4/12/2025,Praveena,Not Admitted
+ADM0316,STU0316,Fida Babu,9111546431,fida.babu316@gmail.com,Palakkad,Working Professional,Data Science with Python,Online,4/13/2025,Rifana,Not Admitted
+ADM0317,STU0317,Jasim Nair,9765445541,jasim.nair317@gmail.com,Trivandrum,Diploma,MERN Stack Development,Online,4/14/2025,Rifana,Not Admitted
+ADM0318,STU0318,Midhun Raj,9266257789,midhun.raj318@gmail.com,Calicut,PG,UI/UX Design,Online,4/15/2025,Baiju,Not Admitted
+ADM0319,STU0319,Safa P,9769957764,safa.p319@gmail.com,Kochi,UG,Digital Marketing,Online,4/16/2025,Shivaprasad,Not Admitted
+ADM0320,STU0320,Midhun Das,9935899183,midhun.das320@gmail.com,Kannur,Diploma,Python Full Stack Development,Offline,4/17/2025,Baiju,Not Admitted
+ADM0321,STU0321,Farhan Das,9735547076,farhan.das321@gmail.com,Calicut,PG,Python Full Stack Development,Online,4/18/2025,Shivaprasad,Not Admitted
+ADM0322,STU0322,Sreya Ali,9945773573,sreya.ali322@gmail.com,Kottayam,Working Professional,Digital Marketing,Offline,4/19/2025,Praveena,Not Admitted
+ADM0323,STU0323,Adil Babu,9803656380,adil.babu323@gmail.com,Kochi,Diploma,Digital Marketing,Offline,4/20/2025,Shivaprasad,Not Admitted
+ADM0324,STU0324,Safa Das,9135759807,safa.das324@gmail.com,Kottayam,Diploma,Digital Marketing,Offline,4/21/2025,Shivaprasad,Not Admitted
+ADM0325,STU0325,Ameen Nair,9215495633,ameen.nair325@gmail.com,Calicut,PG,UI/UX Design,Online,4/22/2025,Shivaprasad,Not Admitted
+ADM0326,STU0326,Midhun P,9844448111,midhun.p326@gmail.com,Kochi,PG,Python Full Stack Development,Online,4/23/2025,Shivaprasad,Not Admitted
+ADM0327,STU0327,Farhan Babu,9955015209,farhan.babu327@gmail.com,Kannur,Diploma,MERN Stack Development,Offline,4/24/2025,Baiju,Not Admitted
+ADM0328,STU0328,Sreya Babu,9559927753,sreya.babu328@gmail.com,Calicut,PG,Digital Marketing,Offline,4/25/2025,Baiju,Not Admitted
+ADM0329,STU0329,Adil Babu,9195844520,adil.babu329@gmail.com,Kannur,Working Professional,Digital Marketing,Online,4/26/2025,Rifana,Not Admitted
+ADM0330,STU0330,Safa Kumar,9344555675,safa.kumar330@gmail.com,Kannur,Working Professional,Python Full Stack Development,Offline,4/27/2025,Baiju,Not Admitted
+ADM0331,STU0331,Fida Nair,9636327606,fida.nair331@gmail.com,Kochi,Working Professional,Python Full Stack Development,Offline,4/28/2025,Rifana,Not Admitted
+ADM0332,STU0332,Ameen Babu,9568592574,ameen.babu332@gmail.com,Kochi,Diploma,UI/UX Design,Online,4/29/2025,Baiju,Not Admitted
+ADM0333,STU0333,Adil Raj,9136333639,adil.raj333@gmail.com,Kannur,Working Professional,DevOps,Online,4/30/2025,Baiju,Not Admitted
+ADM0334,STU0334,Safa Kumar,9812318910,safa.kumar334@gmail.com,Palakkad,Working Professional,UI/UX Design,Offline,5/1/2025,Rifana,Not Admitted
+ADM0335,STU0335,Ameen Kumar,9858847004,ameen.kumar335@gmail.com,Trivandrum,Diploma,MERN Stack Development,Offline,5/2/2025,Baiju,Not Admitted
+ADM0336,STU0336,Safa Babu,9262096994,safa.babu336@gmail.com,Calicut,PG,Python Full Stack Development,Offline,5/3/2025,Shivaprasad,Not Admitted
+ADM0337,STU0337,Jasim K,9231593742,jasim.k337@gmail.com,Kochi,Diploma,Data Science with Python,Offline,5/4/2025,Rifana,Not Admitted
+ADM0338,STU0338,Farhan Kumar,9434185982,farhan.kumar338@gmail.com,Palakkad,Working Professional,Digital Marketing,Offline,5/5/2025,Baiju,Not Admitted
+ADM0339,STU0339,Farhan Das,9335191926,farhan.das339@gmail.com,Trivandrum,UG,Python Full Stack Development,Online,5/6/2025,Praveena,Not Admitted
+ADM0340,STU0340,Nihal P,9927738559,nihal.p340@gmail.com,Kochi,Diploma,DevOps,Offline,5/7/2025,Shivaprasad,Not Admitted
+ADM0341,STU0341,Nihal Kumar,9409940634,nihal.kumar341@gmail.com,Trivandrum,Working Professional,MERN Stack Development,Online,5/8/2025,Rifana,Not Admitted
+ADM0342,STU0342,Farhan P,9798558327,farhan.p342@gmail.com,Trivandrum,Working Professional,MERN Stack Development,Offline,5/9/2025,Praveena,Not Admitted
+ADM0343,STU0343,Safa Kumar,9977388984,safa.kumar343@gmail.com,Trivandrum,UG,Python Full Stack Development,Offline,5/10/2025,Rifana,Not Admitted
+ADM0344,STU0344,Fida Ali,9868369317,fida.ali344@gmail.com,Kochi,UG,Data Science with Python,Online,5/11/2025,Shivaprasad,Not Admitted
+ADM0345,STU0345,Fida Raj,9695294707,fida.raj345@gmail.com,Kottayam,Diploma,Python Full Stack Development,Online,5/12/2025,Praveena,Not Admitted
+ADM0346,STU0346,Nihal Nair,9492637225,nihal.nair346@gmail.com,Thrissur,Diploma,Digital Marketing,Offline,5/13/2025,Rifana,Not Admitted
+ADM0347,STU0347,Ameen K,9701743262,ameen.k347@gmail.com,Calicut,Working Professional,Python Full Stack Development,Online,5/14/2025,Shivaprasad,Not Admitted
+ADM0348,STU0348,Fida Nair,9733610392,fida.nair348@gmail.com,Kannur,UG,DevOps,Online,5/15/2025,Rifana,Not Admitted
+ADM0349,STU0349,Adil Babu,9654328632,adil.babu349@gmail.com,Trivandrum,UG,DevOps,Offline,5/16/2025,Shivaprasad,Not Admitted
+ADM0350,STU0350,Farhan K,9446940425,farhan.k350@gmail.com,Kochi,PG,DevOps,Offline,5/17/2025,Shivaprasad,Not Admitted
+ADM0351,STU0351,Riya Raj,9356893611,riya.raj351@gmail.com,Kannur,UG,MERN Stack Development,Offline,5/18/2025,Praveena,Not Admitted
+ADM0352,STU0352,Riya Nair,9441982334,riya.nair352@gmail.com,Trivandrum,Working Professional,Digital Marketing,Offline,5/19/2025,Praveena,Not Admitted
+ADM0353,STU0353,Midhun P,9856885988,midhun.p353@gmail.com,Thrissur,PG,MERN Stack Development,Online,5/20/2025,Rifana,Not Admitted
+ADM0354,STU0354,Nihal Ali,9612820096,nihal.ali354@gmail.com,Calicut,PG,Digital Marketing,Online,5/21/2025,Praveena,Not Admitted
+ADM0355,STU0355,Nihal Babu,9350180668,nihal.babu355@gmail.com,Kochi,Diploma,Data Science with Python,Offline,5/22/2025,Shivaprasad,Not Admitted
+ADM0356,STU0356,Midhun Raj,9698756518,midhun.raj356@gmail.com,Kochi,UG,DevOps,Online,5/23/2025,Baiju,Not Admitted
+ADM0357,STU0357,Midhun Babu,9667543019,midhun.babu357@gmail.com,Kannur,UG,Data Science with Python,Offline,5/24/2025,Praveena,Not Admitted
+ADM0358,STU0358,Jasim Ali,9527341356,jasim.ali358@gmail.com,Kottayam,UG,UI/UX Design,Online,5/25/2025,Shivaprasad,Not Admitted
+ADM0359,STU0359,Nihal Babu,9176061955,nihal.babu359@gmail.com,Trivandrum,Working Professional,Python Full Stack Development,Offline,5/26/2025,Shivaprasad,Not Admitted
+ADM0360,STU0360,Midhun Babu,9859274993,midhun.babu360@gmail.com,Kochi,Diploma,Digital Marketing,Offline,5/27/2025,Baiju,Not Admitted
+ADM0361,STU0361,Fida P,9172688169,fida.p361@gmail.com,Calicut,Diploma,UI/UX Design,Offline,5/28/2025,Baiju,Not Admitted
+ADM0362,STU0362,Adil P,9991678038,adil.p362@gmail.com,Kottayam,Diploma,Python Full Stack Development,Online,5/29/2025,Rifana,Not Admitted
+ADM0363,STU0363,Farhan K,9427937782,farhan.k363@gmail.com,Kochi,Working Professional,MERN Stack Development,Offline,5/30/2025,Shivaprasad,Not Admitted
+ADM0364,STU0364,Jasim Raj,9140787931,jasim.raj364@gmail.com,Calicut,Diploma,UI/UX Design,Offline,5/31/2025,Shivaprasad,Not Admitted
+ADM0365,STU0365,Sreya Das,9470678428,sreya.das365@gmail.com,Kochi,Diploma,Python Full Stack Development,Offline,6/1/2024,Praveena,Not Admitted
+ADM0366,STU0366,Jasim K,9273895936,jasim.k366@gmail.com,Kannur,PG,DevOps,Online,6/2/2024,Praveena,Not Admitted
+ADM0367,STU0367,Safa Kumar,9168067042,safa.kumar367@gmail.com,Kannur,Working Professional,DevOps,Online,6/3/2024,Praveena,Not Admitted
+ADM0368,STU0368,Fida K,9902205856,fida.k368@gmail.com,Kottayam,Diploma,Python Full Stack Development,Offline,6/4/2024,Rifana,Not Admitted
+ADM0369,STU0369,Riya Das,9673396273,riya.das369@gmail.com,Trivandrum,Working Professional,Data Science with Python,Offline,6/5/2024,Rifana,Not Admitted
+ADM0370,STU0370,Jasim Nair,9464654458,jasim.nair370@gmail.com,Kochi,UG,UI/UX Design,Offline,6/6/2024,Rifana,Not Admitted
+ADM0371,STU0371,Jasim Ali,9455651999,jasim.ali371@gmail.com,Kochi,UG,MERN Stack Development,Offline,6/7/2024,Praveena,Not Admitted
+ADM0372,STU0372,Jasim Nair,9143551595,jasim.nair372@gmail.com,Kochi,UG,DevOps,Offline,6/8/2024,Baiju,Not Admitted
+ADM0373,STU0373,Safa Raj,9683023936,safa.raj373@gmail.com,Kottayam,Diploma,Data Science with Python,Online,6/9/2024,Shivaprasad,Not Admitted
+ADM0374,STU0374,Riya Kumar,9285474449,riya.kumar374@gmail.com,Kottayam,UG,UI/UX Design,Offline,6/10/2024,Praveena,Not Admitted
+ADM0375,STU0375,Farhan Kumar,9427517567,farhan.kumar375@gmail.com,Thrissur,PG,Python Full Stack Development,Offline,6/11/2024,Shivaprasad,Not Admitted
+ADM0376,STU0376,Nihal Babu,9270477737,nihal.babu376@gmail.com,Thrissur,Diploma,UI/UX Design,Offline,6/12/2024,Baiju,Not Admitted
+ADM0377,STU0377,Jasim Babu,9462374496,jasim.babu377@gmail.com,Thrissur,PG,Python Full Stack Development,Online,6/13/2024,Shivaprasad,Not Admitted
+ADM0378,STU0378,Nihal Nair,9279721795,nihal.nair378@gmail.com,Kochi,Diploma,Digital Marketing,Offline,6/14/2024,Baiju,Not Admitted
+ADM0379,STU0379,Ameen P,9712249517,ameen.p379@gmail.com,Palakkad,PG,DevOps,Online,6/15/2024,Shivaprasad,Not Admitted
+ADM0380,STU0380,Fida Babu,9457736578,fida.babu380@gmail.com,Kannur,Working Professional,DevOps,Online,6/16/2024,Praveena,Not Admitted
+ADM0381,STU0381,Sreya Ali,9223515142,sreya.ali381@gmail.com,Kottayam,UG,Digital Marketing,Offline,6/17/2024,Praveena,Not Admitted
+ADM0382,STU0382,Ameen K,9220153292,ameen.k382@gmail.com,Kottayam,Working Professional,Python Full Stack Development,Online,6/18/2024,Rifana,Not Admitted
+ADM0383,STU0383,Ameen Ali,9170773819,ameen.ali383@gmail.com,Kottayam,Diploma,Digital Marketing,Online,6/19/2024,Praveena,Not Admitted
+ADM0384,STU0384,Riya Das,9998359660,riya.das384@gmail.com,Trivandrum,Working Professional,UI/UX Design,Online,6/20/2024,Shivaprasad,Not Admitted
+ADM0385,STU0385,Farhan Babu,9425226921,farhan.babu385@gmail.com,Palakkad,PG,Data Science with Python,Offline,6/21/2024,Shivaprasad,Not Admitted
+ADM0386,STU0386,Nihal Babu,9367556970,nihal.babu386@gmail.com,Kochi,Diploma,Python Full Stack Development,Online,6/22/2024,Praveena,Not Admitted
+ADM0387,STU0387,Ameen Nair,9276863554,ameen.nair387@gmail.com,Palakkad,UG,Data Science with Python,Offline,6/23/2024,Rifana,Not Admitted
+ADM0388,STU0388,Jasim Nair,9409688082,jasim.nair388@gmail.com,Trivandrum,PG,Data Science with Python,Online,6/24/2024,Rifana,Not Admitted
+ADM0389,STU0389,Safa P,9145213575,safa.p389@gmail.com,Calicut,UG,MERN Stack Development,Offline,6/25/2024,Praveena,Not Admitted
+ADM0390,STU0390,Jasim Babu,9759647032,jasim.babu390@gmail.com,Palakkad,UG,Data Science with Python,Online,6/26/2024,Praveena,Not Admitted
+ADM0391,STU0391,Ameen Babu,9177416189,ameen.babu391@gmail.com,Calicut,Diploma,MERN Stack Development,Online,6/27/2024,Shivaprasad,Not Admitted
+ADM0392,STU0392,Jasim Das,9204956319,jasim.das392@gmail.com,Kottayam,Working Professional,DevOps,Offline,6/28/2024,Shivaprasad,Not Admitted
+ADM0393,STU0393,Jasim K,9479884485,jasim.k393@gmail.com,Kochi,PG,DevOps,Online,6/29/2024,Baiju,Not Admitted
+ADM0394,STU0394,Riya Kumar,9840896388,riya.kumar394@gmail.com,Kannur,Diploma,MERN Stack Development,Offline,6/30/2024,Rifana,Not Admitted
+ADM0395,STU0395,Midhun Das,9207288143,midhun.das395@gmail.com,Kottayam,Diploma,Data Science with Python,Offline,7/1/2024,Shivaprasad,Not Admitted
+ADM0396,STU0396,Riya Raj,9587415138,riya.raj396@gmail.com,Palakkad,UG,Python Full Stack Development,Offline,7/2/2024,Rifana,Not Admitted
+ADM0397,STU0397,Ameen Raj,9795344389,ameen.raj397@gmail.com,Kottayam,Working Professional,Digital Marketing,Offline,7/3/2024,Praveena,Not Admitted
+ADM0398,STU0398,Fida Raj,9629784101,fida.raj398@gmail.com,Thrissur,Working Professional,Data Science with Python,Online,7/4/2024,Rifana,Not Admitted
+ADM0399,STU0399,Fida K,9340688370,fida.k399@gmail.com,Trivandrum,Working Professional,Digital Marketing,Online,7/5/2024,Praveena,Not Admitted
+ADM0400,STU0400,Adil P,9709738925,adil.p400@gmail.com,Kottayam,PG,Data Science with Python,Offline,7/6/2024,Rifana,Not Admitted
+ADM0401,STU0401,Jasim Raj,9115719408,jasim.raj401@gmail.com,Kochi,Diploma,UI/UX Design,Offline,7/7/2024,Baiju,Not Admitted
+ADM0402,STU0402,Sreya Nair,9202848145,sreya.nair402@gmail.com,Kannur,Working Professional,DevOps,Offline,7/8/2024,Shivaprasad,Not Admitted
+ADM0403,STU0403,Sreya Kumar,9277035575,sreya.kumar403@gmail.com,Kottayam,Working Professional,MERN Stack Development,Offline,7/9/2024,Shivaprasad,Not Admitted
+ADM0404,STU0404,Midhun K,9603921510,midhun.k404@gmail.com,Calicut,UG,MERN Stack Development,Offline,7/10/2024,Baiju,Not Admitted
+ADM0405,STU0405,Midhun Babu,9306305659,midhun.babu405@gmail.com,Kochi,Diploma,Python Full Stack Development,Offline,7/11/2024,Rifana,Not Admitted
+ADM0406,STU0406,Nihal Raj,9830076681,nihal.raj406@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,7/12/2024,Rifana,Not Admitted
+ADM0407,STU0407,Farhan Ali,9567043001,farhan.ali407@gmail.com,Calicut,Diploma,Digital Marketing,Online,7/13/2024,Shivaprasad,Not Admitted
+ADM0408,STU0408,Sreya Ali,9401812000,sreya.ali408@gmail.com,Trivandrum,PG,UI/UX Design,Offline,7/14/2024,Rifana,Not Admitted
+ADM0409,STU0409,Sreya P,9169788294,sreya.p409@gmail.com,Trivandrum,Diploma,MERN Stack Development,Offline,7/15/2024,Praveena,Not Admitted
+ADM0410,STU0410,Sreya K,9873415504,sreya.k410@gmail.com,Palakkad,Diploma,MERN Stack Development,Offline,7/16/2024,Baiju,Not Admitted
+ADM0411,STU0411,Riya K,9248541251,riya.k411@gmail.com,Palakkad,PG,DevOps,Offline,7/17/2024,Shivaprasad,Not Admitted
+ADM0412,STU0412,Nihal Kumar,9114716934,nihal.kumar412@gmail.com,Kochi,Diploma,DevOps,Online,7/18/2024,Praveena,Not Admitted
+ADM0413,STU0413,Midhun Raj,9537590698,midhun.raj413@gmail.com,Calicut,UG,UI/UX Design,Online,7/19/2024,Rifana,Not Admitted
+ADM0414,STU0414,Safa K,9920474125,safa.k414@gmail.com,Kottayam,UG,Python Full Stack Development,Offline,7/20/2024,Praveena,Not Admitted
+ADM0415,STU0415,Safa Kumar,9689383700,safa.kumar415@gmail.com,Thrissur,PG,UI/UX Design,Offline,7/21/2024,Shivaprasad,Not Admitted
+ADM0416,STU0416,Nihal Nair,9809446462,nihal.nair416@gmail.com,Palakkad,Diploma,DevOps,Offline,7/22/2024,Rifana,Not Admitted
+ADM0417,STU0417,Jasim P,9150320719,jasim.p417@gmail.com,Kannur,Diploma,Python Full Stack Development,Offline,7/23/2024,Rifana,Not Admitted
+ADM0418,STU0418,Ameen Raj,9986039118,ameen.raj418@gmail.com,Palakkad,UG,Python Full Stack Development,Offline,7/24/2024,Baiju,Not Admitted
+ADM0419,STU0419,Fida Das,9321437034,fida.das419@gmail.com,Calicut,PG,Digital Marketing,Online,7/25/2024,Rifana,Not Admitted
+ADM0420,STU0420,Ameen Ali,9398745637,ameen.ali420@gmail.com,Palakkad,Diploma,Data Science with Python,Online,7/26/2024,Rifana,Not Admitted
+ADM0421,STU0421,Sreya Raj,9525847469,sreya.raj421@gmail.com,Kochi,PG,Python Full Stack Development,Offline,7/27/2024,Baiju,Not Admitted
+ADM0422,STU0422,Jasim Raj,9299223121,jasim.raj422@gmail.com,Trivandrum,Working Professional,MERN Stack Development,Offline,7/28/2024,Rifana,Not Admitted
+ADM0423,STU0423,Midhun Babu,9771531399,midhun.babu423@gmail.com,Thrissur,PG,Data Science with Python,Offline,7/29/2024,Baiju,Not Admitted
+ADM0424,STU0424,Safa Nair,9499847352,safa.nair424@gmail.com,Calicut,UG,UI/UX Design,Online,7/30/2024,Baiju,Not Admitted
+ADM0425,STU0425,Fida Nair,9281853417,fida.nair425@gmail.com,Kottayam,UG,MERN Stack Development,Online,7/31/2024,Praveena,Not Admitted
+ADM0426,STU0426,Fida Ali,9370778663,fida.ali426@gmail.com,Kochi,Working Professional,UI/UX Design,Offline,8/1/2024,Shivaprasad,Not Admitted
+ADM0427,STU0427,Midhun Ali,9109600128,midhun.ali427@gmail.com,Palakkad,Diploma,UI/UX Design,Offline,8/2/2024,Rifana,Not Admitted
+ADM0428,STU0428,Jasim Nair,9823818197,jasim.nair428@gmail.com,Palakkad,PG,Python Full Stack Development,Online,8/3/2024,Praveena,Not Admitted
+ADM0429,STU0429,Jasim Raj,9662992766,jasim.raj429@gmail.com,Calicut,Working Professional,MERN Stack Development,Online,8/4/2024,Rifana,Not Admitted
+ADM0430,STU0430,Riya P,9880679989,riya.p430@gmail.com,Kannur,UG,Data Science with Python,Offline,8/5/2024,Baiju,Not Admitted
+ADM0431,STU0431,Ameen Nair,9987710457,ameen.nair431@gmail.com,Kannur,PG,DevOps,Online,8/6/2024,Praveena,Not Admitted
+ADM0432,STU0432,Ameen Kumar,9732876943,ameen.kumar432@gmail.com,Thrissur,PG,DevOps,Offline,8/7/2024,Shivaprasad,Not Admitted
+ADM0433,STU0433,Riya Nair,9211457897,riya.nair433@gmail.com,Calicut,Diploma,DevOps,Online,8/8/2024,Rifana,Not Admitted
+ADM0434,STU0434,Jasim Ali,9727842980,jasim.ali434@gmail.com,Kottayam,PG,Python Full Stack Development,Online,8/9/2024,Shivaprasad,Not Admitted
+ADM0435,STU0435,Ameen K,9346261062,ameen.k435@gmail.com,Kannur,Diploma,UI/UX Design,Online,8/10/2024,Praveena,Not Admitted
+ADM0436,STU0436,Adil Nair,9391992069,adil.nair436@gmail.com,Kottayam,Diploma,Digital Marketing,Online,8/11/2024,Rifana,Not Admitted
+ADM0437,STU0437,Riya Kumar,9227417145,riya.kumar437@gmail.com,Calicut,Diploma,UI/UX Design,Online,8/12/2024,Rifana,Not Admitted
+ADM0438,STU0438,Ameen P,9142266009,ameen.p438@gmail.com,Kottayam,PG,Digital Marketing,Online,8/13/2024,Shivaprasad,Not Admitted
+ADM0439,STU0439,Midhun Kumar,9511824061,midhun.kumar439@gmail.com,Calicut,Diploma,UI/UX Design,Offline,8/14/2024,Praveena,Not Admitted
+ADM0440,STU0440,Nihal Ali,9956547754,nihal.ali440@gmail.com,Kannur,Working Professional,Data Science with Python,Online,8/15/2024,Rifana,Not Admitted
+ADM0441,STU0441,Riya Das,9884059996,riya.das441@gmail.com,Palakkad,UG,DevOps,Offline,8/16/2024,Baiju,Not Admitted
+ADM0442,STU0442,Ameen Nair,9623578079,ameen.nair442@gmail.com,Calicut,Diploma,MERN Stack Development,Online,8/17/2024,Rifana,Not Admitted
+ADM0443,STU0443,Fida Das,9984538185,fida.das443@gmail.com,Kottayam,Diploma,Python Full Stack Development,Online,8/18/2024,Rifana,Not Admitted
+ADM0444,STU0444,Ameen Ali,9915589415,ameen.ali444@gmail.com,Trivandrum,Working Professional,Digital Marketing,Online,8/19/2024,Shivaprasad,Not Admitted
+ADM0445,STU0445,Adil Ali,9638034927,adil.ali445@gmail.com,Kannur,Working Professional,DevOps,Online,8/20/2024,Praveena,Not Admitted
+ADM0446,STU0446,Farhan K,9922280581,farhan.k446@gmail.com,Trivandrum,UG,MERN Stack Development,Online,8/21/2024,Shivaprasad,Not Admitted
+ADM0447,STU0447,Adil Ali,9473458726,adil.ali447@gmail.com,Kannur,PG,DevOps,Offline,8/22/2024,Baiju,Not Admitted
+ADM0448,STU0448,Nihal Ali,9795436105,nihal.ali448@gmail.com,Trivandrum,PG,UI/UX Design,Online,8/23/2024,Baiju,Not Admitted
+ADM0449,STU0449,Midhun Das,9448178418,midhun.das449@gmail.com,Trivandrum,Diploma,UI/UX Design,Online,8/24/2024,Rifana,Not Admitted
+ADM0450,STU0450,Riya P,9306206228,riya.p450@gmail.com,Calicut,UG,Digital Marketing,Offline,8/25/2024,Baiju,Not Admitted
+ADM0451,STU0451,Adil Raj,9117882033,adil.raj451@gmail.com,Kochi,UG,Data Science with Python,Online,8/26/2024,Praveena,Not Admitted
+ADM0452,STU0452,Nihal Ali,9560289553,nihal.ali452@gmail.com,Calicut,Working Professional,Data Science with Python,Offline,8/27/2024,Praveena,Not Admitted
+ADM0453,STU0453,Nihal Das,9339113910,nihal.das453@gmail.com,Thrissur,Working Professional,Data Science with Python,Offline,8/28/2024,Shivaprasad,Not Admitted
+ADM0454,STU0454,Midhun Babu,9492200930,midhun.babu454@gmail.com,Thrissur,UG,UI/UX Design,Offline,8/29/2024,Baiju,Not Admitted
+ADM0455,STU0455,Adil Kumar,9403621752,adil.kumar455@gmail.com,Kannur,PG,DevOps,Online,8/30/2024,Praveena,Not Admitted
+ADM0456,STU0456,Sreya Raj,9318424098,sreya.raj456@gmail.com,Kottayam,Diploma,UI/UX Design,Online,8/31/2024,Praveena,Not Admitted
+ADM0457,STU0457,Midhun Ali,9720577225,midhun.ali457@gmail.com,Kannur,UG,UI/UX Design,Online,9/1/2024,Praveena,Not Admitted
+ADM0458,STU0458,Sreya Kumar,9648156326,sreya.kumar458@gmail.com,Kottayam,PG,DevOps,Online,9/2/2024,Shivaprasad,Not Admitted
+ADM0459,STU0459,Farhan Kumar,9994756367,farhan.kumar459@gmail.com,Trivandrum,Diploma,MERN Stack Development,Online,9/3/2024,Rifana,Not Admitted
+ADM0460,STU0460,Nihal Kumar,9873223058,nihal.kumar460@gmail.com,Kottayam,PG,DevOps,Offline,9/4/2024,Praveena,Not Admitted
+ADM0461,STU0461,Fida Kumar,9557795386,fida.kumar461@gmail.com,Thrissur,Working Professional,MERN Stack Development,Online,9/5/2024,Praveena,Not Admitted
+ADM0462,STU0462,Safa Das,9925862096,safa.das462@gmail.com,Palakkad,PG,Python Full Stack Development,Online,9/6/2024,Shivaprasad,Not Admitted
+ADM0463,STU0463,Sreya Babu,9863902740,sreya.babu463@gmail.com,Kannur,Diploma,UI/UX Design,Offline,9/7/2024,Baiju,Not Admitted
+ADM0464,STU0464,Fida Nair,9307924485,fida.nair464@gmail.com,Kochi,Diploma,UI/UX Design,Online,9/8/2024,Baiju,Not Admitted
+ADM0465,STU0465,Farhan Das,9902590918,farhan.das465@gmail.com,Kochi,UG,Digital Marketing,Offline,9/9/2024,Shivaprasad,Not Admitted
+ADM0466,STU0466,Riya K,9375222689,riya.k466@gmail.com,Kottayam,PG,Data Science with Python,Offline,9/10/2024,Baiju,Not Admitted
+ADM0467,STU0467,Ameen Babu,9300719483,ameen.babu467@gmail.com,Palakkad,Working Professional,UI/UX Design,Online,9/11/2024,Praveena,Not Admitted
+ADM0468,STU0468,Safa Raj,9422102794,safa.raj468@gmail.com,Trivandrum,Working Professional,UI/UX Design,Offline,9/12/2024,Rifana,Not Admitted
+ADM0469,STU0469,Safa K,9336528327,safa.k469@gmail.com,Trivandrum,Working Professional,Digital Marketing,Offline,9/13/2024,Praveena,Not Admitted
+ADM0470,STU0470,Nihal Raj,9552791148,nihal.raj470@gmail.com,Kochi,UG,Digital Marketing,Offline,9/14/2024,Praveena,Not Admitted
+ADM0471,STU0471,Ameen Nair,9586101490,ameen.nair471@gmail.com,Trivandrum,Working Professional,Python Full Stack Development,Offline,9/15/2024,Shivaprasad,Not Admitted
+ADM0472,STU0472,Jasim K,9715201830,jasim.k472@gmail.com,Kochi,Working Professional,Python Full Stack Development,Offline,9/16/2024,Rifana,Not Admitted
+ADM0473,STU0473,Sreya P,9965712098,sreya.p473@gmail.com,Trivandrum,Working Professional,DevOps,Offline,9/17/2024,Baiju,Not Admitted
+ADM0474,STU0474,Sreya Ali,9911293965,sreya.ali474@gmail.com,Palakkad,PG,Python Full Stack Development,Online,9/18/2024,Praveena,Not Admitted

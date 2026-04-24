@@ -1,0 +1,201 @@
+student_id,student_name,course,batch_id,1-Apr,2-Apr,3-Apr,4-Apr,5-Apr,6-Apr,7-Apr,8-Apr,9-Apr,10-Apr,11-Apr,12-Apr,13-Apr,14-Apr,15-Apr,16-Apr,17-Apr,18-Apr,19-Apr,20-Apr,21-Apr,22-Apr,23-Apr,24-Apr,25-Apr,26-Apr,27-Apr,28-Apr,29-Apr,30-Apr,Total Days,Present,Absent,Attendance %,Status
+STU0001,Kiran,MERN Stack Development,B04,P,A,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0002,Tanya,Data Science with Python,B02,A,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0003,Faisal,Data Science with Python,A03,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0004,Ajay,Python Full Stack Development,A07,P,P,A,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0005,Rahul,MERN Stack Development,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0006,Arjun,DevOps,A03,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0007,Irfan,React Frontend Developer,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0008,Neeraj,Python Full Stack Development,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0009,Anjali,Business Analytics,A08,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0010,Neeraj,MERN Stack Development,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0011,Rahul,DevOps,A04,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0012,Sahil,Python Full Stack Development,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0013,Divya,Python Full Stack Development,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0014,Tanya,Flutter Development,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0015,Divya,Python Full Stack Development,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0016,Keerthi,React Frontend Developer,B07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0017,Imran,Data Science with Python,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0018,Arjun,Python Full Stack Development,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0019,Pooja,Python Full Stack Development,A08,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0020,Meena,MERN Stack Development,B07,P,P,A,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0021,Tanya,Python Full Stack Development,B06,P,A,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0022,Arjun,Python Full Stack Development,B06,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0023,Divya,Data Science with Python,A06,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0024,Aman,MERN Stack Development,B04,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0025,Reshma,React Frontend Developer,B06,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0026,Nisha,Data Science with Python,B02,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0027,Vivek,Data Science with Python,A08,A,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0028,Rahul,React Frontend Developer,A04,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0029,Sanjay,Python Full Stack Development,B06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0030,Zara,Data Science with Python,A01,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0031,Sahil,Data Science with Python,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0032,Arjun,Data Science with Python,A07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0033,Aisha,Data Science with Python,B07,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0034,John,React Frontend Developer,B02,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0035,Faisal,Data Science with Python,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0036,Tanya,React Frontend Developer,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0037,Aman,Data Science with Python,B01,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0038,Farhan,Cyber Security,B02,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0039,Kiran,Data Science with Python,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0040,Harsha,Data Science with Python,A07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0041,Sahil,MERN Stack Development,B07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0042,Aisha,Data Science with Python,A01,P,A,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0043,Imran,Data Science with Python,B06,P,P,P,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0044,Rahul,MERN Stack Development,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0045,Aman,Data Science with Python,B07,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0046,John,React Frontend Developer,B07,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0047,John,MERN Stack Development,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0048,Zara,DevOps,A01,P,P,A,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0049,Nisha,React Frontend Developer,B07,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0050,Sahil,MERN Stack Development,A04,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0051,Aisha,MERN Stack Development,A03,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0052,Arjun,Data Science with Python,A04,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0053,Aman,Python Full Stack Development,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0054,Faisal,Data Science with Python,B01,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0055,Tanya,Data Science with Python,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0056,Aisha,Data Science with Python,A08,A,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0057,Aisha,MERN Stack Development,A04,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0058,Aisha,React Frontend Developer,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0059,Faisal,Python Full Stack Development,B06,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0060,Harsha,MERN Stack Development,A01,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0061,Kiran,MERN Stack Development,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0062,Nisha,Data Science with Python,B06,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0063,Neeraj,React Frontend Developer,B06,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0064,Farhan,Python Full Stack Development,A03,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0065,Farhan,DevOps,A06,A,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0066,Pooja,MERN Stack Development,B06,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0067,Tanya,Python Full Stack Development,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0068,Naveen,Python Full Stack Development,A04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0069,Vivek,MERN Stack Development,B07,A,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0070,Varun,Python Full Stack Development,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0071,Harsha,Data Science with Python,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0072,Kiran,Cyber Security,A04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0073,Sanjay,MERN Stack Development,B07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0074,Reshma,MERN Stack Development,A08,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0075,Aman,Python Full Stack Development,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0076,Anjali,Business Analytics,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0077,Manoj,MERN Stack Development,A08,P,A,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0078,Aisha,MERN Stack Development,B04,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0079,Farhan,React Frontend Developer,A03,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0080,John,Data Science with Python,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0081,Sanjay,Python Full Stack Development,A03,A,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0082,Anjali,Data Science with Python,B07,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0083,John,Cyber Security,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0084,Rohit,Python Full Stack Development,A07,A,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0085,Sanjay,Data Science with Python,B07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0086,Kiran,React Frontend Developer,A04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0087,Manoj,Data Science with Python,A04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0088,Sneha,Data Science with Python,A01,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0089,Anjali,Data Science with Python,B05,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0090,Sanjay,Cyber Security,B07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0091,Vivek,Data Science with Python,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0092,Ajay,Python Full Stack Development,A04,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0093,Meena,DevOps,B05,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0094,Imran,Data Science with Python,A07,P,P,A,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0095,Faisal,Python Full Stack Development,A04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0096,Naveen,React Frontend Developer,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0097,Pooja,React Frontend Developer,B05,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0098,Irfan,React Frontend Developer,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0099,Aisha,Python Full Stack Development,A06,A,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0100,Ajay,Python Full Stack Development,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0101,Zara,MERN Stack Development,B06,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0102,Farhan,React Frontend Developer,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0103,Sneha,Python Full Stack Development,B02,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0104,Irfan,Cyber Security,B06,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0105,Sanjay,Python Full Stack Development,A04,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0106,Aisha,Python Full Stack Development,B01,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0107,Faisal,MERN Stack Development,A04,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0108,Harsha,Data Science with Python,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0109,Rahul,MERN Stack Development,B02,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0110,Rohit,Python Full Stack Development,B02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0111,Anjali,React Frontend Developer,A01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0112,Keerthi,MERN Stack Development,A04,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0113,Keerthi,React Frontend Developer,A01,A,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0114,Pooja,MERN Stack Development,B07,P,P,A,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0115,Imran,DevOps,A04,P,P,P,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0116,Rahul,React Frontend Developer,A07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0117,Rohit,Python Full Stack Development,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0118,Divya,Data Science with Python,A05,P,P,A,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0119,Imran,Python Full Stack Development,B02,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0120,Reshma,Data Science with Python,B07,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0121,Meena,Data Science with Python,B06,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0122,Anjali,Python Full Stack Development,A08,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0123,Faisal,React Frontend Developer,B02,P,A,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0124,Rohit,Data Science with Python,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0125,Faisal,Data Science with Python,A07,A,P,A,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0126,Arjun,Data Science with Python,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0127,Ajay,Data Science with Python,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0128,Imran,Python Full Stack Development,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0129,Farhan,DevOps,A01,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0130,Naveen,MERN Stack Development,A08,P,A,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0131,Rahul,Data Science with Python,B01,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0132,Irfan,React Frontend Developer,A05,P,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0133,Meena,Data Science with Python,B01,P,A,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0134,Divya,Data Science with Python,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0135,Tanya,Data Science with Python,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0136,Arjun,Data Science with Python,A01,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0137,Rohit,Data Science with Python,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0138,Reshma,Data Science with Python,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0139,Meena,Python Full Stack Development,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0140,Faisal,Python Full Stack Development,B06,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0141,Imran,Data Science with Python,A07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0142,Naveen,Data Science with Python,A08,A,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0143,Zara,React Frontend Developer,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0144,Irfan,Data Science with Python,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0145,Meena,Flutter Development,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0146,Arjun,MERN Stack Development,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0147,Sahil,UI/UX Design,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0148,Sneha,MERN Stack Development,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0149,Kiran,MERN Stack Development,B03,P,P,P,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0150,Reshma,Data Science with Python,B07,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0151,Kiran,Data Science with Python,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0152,Sahil,React Frontend Developer,B05,P,P,A,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0153,Anjali,React Frontend Developer,A01,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0154,Pooja,Data Science with Python,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0155,Tanya,Python Full Stack Development,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0156,Divya,Python Full Stack Development,B06,P,A,P,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0157,Anjali,Python Full Stack Development,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0158,Aman,React Frontend Developer,A08,A,A,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0159,Harsha,Data Science with Python,B05,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0160,Imran,Data Science with Python,B04,P,A,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0161,Aman,React Frontend Developer,A02,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0162,Faisal,Data Science with Python,A06,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0163,Divya,Data Science with Python,B05,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0164,Ajay,Data Science with Python,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0165,Nisha,Python Full Stack Development,B05,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0166,Divya,React Frontend Developer,A08,A,A,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0167,Sanjay,React Frontend Developer,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0168,Zara,Cyber Security,A05,A,A,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,2,3,40,Critical
+STU0169,Farhan,Data Science with Python,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0170,Naveen,Data Science with Python,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0171,Meena,MERN Stack Development,B04,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0172,Pooja,MERN Stack Development,B03,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0173,Pooja,Business Analytics,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0174,Arjun,Flutter Development,B06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0175,Harsha,React Frontend Developer,B06,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0176,Rahul,Python Full Stack Development,B01,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0177,Rahul,Data Science with Python,A07,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0178,Ajay,Data Science with Python,A08,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0179,Irfan,Python Full Stack Development,B06,P,A,A,H,H,A,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,1,4,20,Critical
+STU0180,Varun,Data Science with Python,A07,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0181,Ajay,DevOps,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0182,Naveen,Data Science with Python,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0183,Tanya,Data Science with Python,B06,P,P,P,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0184,Farhan,Data Science with Python,B05,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0185,Tanya,Data Science with Python,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0186,Manoj,Cyber Security,A07,P,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0187,Sneha,Data Science with Python,A02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0188,Faisal,Data Science with Python,A02,A,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0189,Varun,Data Science with Python,A05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0190,Sneha,Business Analytics,A06,P,P,A,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,4,1,80,Regular
+STU0191,Rahul,Flutter Development,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0192,Sanjay,React Frontend Developer,A03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0193,Divya,Python Full Stack Development,B05,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0194,Rahul,Data Science with Python,A06,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0195,Aman,Data Science with Python,B04,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0196,Aisha,UI/UX Design,B03,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0197,Aisha,Data Science with Python,A02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0198,Sahil,React Frontend Developer,A02,P,P,A,H,H,P,A,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
+STU0199,Imran,Data Science with Python,A02,P,P,P,H,H,P,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,5,0,100,Excellent
+STU0200,Nisha,Python Full Stack Development,A08,A,P,P,H,H,A,P,,,,H,H,,,,,,H,H,,,,,,H,H,,,,,5,3,2,60,Warning
