@@ -1,0 +1,12 @@
+staff_id,name,course,10:00-12:00,12:00-02:00,02:30-04:30,04:30-05:30 (Online),daily_hours,weekly_hours
+TS001,Akhil Nair,Python Full Stack Development,Python-B3,Python-B2,Python-B1,Python-B1,7,35
+TS002,Deepa R,Python Full Stack Development,Python-B4,Python-B3,Python-B2,Free Period,6,30
+TS003,Kiran Kumar,Data Science with Python,DS-B1,DS-B2,DS-B3,DS-B1,7,35
+TS004,Anjali Menon,Data Science with Python,DS-B4,DS-B5,DS-B6,Free Period,6,30
+TS005,Sneha Pillai,React Frontend Developer,React-B1,React-B2,React-B3,Free Period,6,30
+TS006,Anu George,MERN Stack Development,MERN-B1,MERN-B2,MERN-B3,Free Period,6,30
+TS007,Farhan Ali,DevOps,DevOps-B1,Free Period,DevOps-B2,DevOps-B3,5,25
+TS008,Nithya S,Cyber Security,Cyber-B1,Cyber-B2,Cyber-B3,Free Period,6,30
+TS009,Vivek Raj,Business Analytics,BA-B1,Free Period,BA-B2,BA-B3,5,25
+TS010,Meera Joseph,Flutter Development,Flutter-B2,Free Period,Flutter-B1,Free Period,4,20
+TS011,Aravind P,UI/UX Design,UIUX-B1,Free Period,UIUX-B2,Free Period,4,20
