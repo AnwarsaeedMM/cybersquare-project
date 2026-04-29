@@ -1,0 +1,18 @@
+staff_id,name,role,course,department,batches_handling,hours_per_day
+TS001,Akhil Nair,Python Trainer,Python Full Stack Development,Teaching,2,4
+TS002,Deepa R,Python Trainer,Python Full Stack Development,Teaching,2,4
+TS003,Kiran Kumar,Data Science Trainer,Data Science with Python,Teaching,3,5
+TS004,Anjali Menon,Data Science Trainer,Data Science with Python,Teaching,3,5
+TS005,Sneha Pillai,React Trainer,React Frontend Developer,Teaching,3,4
+TS006,Anu George,MERN Trainer,MERN Stack Development,Teaching,3,4
+TS007,Farhan Ali,DevOps Trainer,DevOps,Teaching,3,3
+TS008,Nithya S,Cyber Security Trainer,Cyber Security,Teaching,3,3
+TS009,Vivek Raj,Business Analytics Trainer,Business Analytics,Teaching,3,3
+TS010,Meera Joseph,Flutter Trainer,Flutter Development,Teaching,3,3
+TS011,Aravind P,UI/UX Trainer,UI/UX Design,Teaching,2,2
+NTS001,Ramesh Babu,Manager,,Administration,0,8
+NTS002,Lakshmi Priya,Front Office Executive,,Front Office,0,8
+NTS003,Sathish Kumar,Accountant,,Finance,0,8
+NTS004,Nivetha S,HR Executive,,HR/Placement,0,8
+NTS005,Manoj K,Digital Marketer,,Marketing,0,8
+NTS006,Divya R,Consultant,,Marketing,0,8
