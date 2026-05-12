@@ -3,7 +3,7 @@
 
 # In[1]:
 
-
+import streamlit as st
 import pandas as  pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -11,12 +11,17 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 from IPython.display import display, HTML
+from pathlib import Path
 
+# Project root
+BASE_DIR = Path.cwd()
+DATA_DIR = BASE_DIR / "data"
 
 # In[2]:
+st.set_page_config(page_title="Course Dashboard", layout="wide")
+st.title("📋 Course Dashboard")
 
-
-dc=pd.read_csv("../data/course_dataset.csv")
+dc=pd.read_csv(DATA_DIR / "course_dataset.csv")
 
 
 # In[3]:
@@ -36,11 +41,81 @@ dc.isnull().sum()
 
 dc.head()
 
+# ----------------------------
+# 🎛️ FILTERS
+# ----------------------------
 
-# In[13]:
+st.sidebar.header("🔍 Course Filters")
 
+# Department Filter
+department_filter = st.sidebar.multiselect(
+    "Select Department",
+    options=sorted(dc['department'].dropna().unique())
+)
 
-# ── Derived columns ──
+# Course Filter
+course_filter = st.sidebar.multiselect(
+    "Select Course",
+    options=sorted(dc['course'].dropna().unique())
+)
+
+# Staff Range Filter
+staff_filter = st.sidebar.slider(
+    "Select Staff Range",
+    int(dc['total_staff'].min()),
+    int(dc['total_staff'].max()),
+    (
+        int(dc['total_staff'].min()),
+        int(dc['total_staff'].max())
+    )
+)
+
+# Batch Range Filter
+batch_filter = st.sidebar.slider(
+    "Select Batch Range",
+    int(dc['total_batches'].min()),
+    int(dc['total_batches'].max()),
+    (
+        int(dc['total_batches'].min()),
+        int(dc['total_batches'].max())
+    )
+)
+
+# ----------------------------
+# APPLY FILTERS
+# ----------------------------
+
+filtered_dc = dc.copy()
+
+# Department
+if department_filter:
+    filtered_dc = filtered_dc[
+        filtered_dc['department'].isin(department_filter)
+    ]
+
+# Course
+if course_filter:
+    filtered_dc = filtered_dc[
+        filtered_dc['course'].isin(course_filter)
+    ]
+
+# Staff Range
+filtered_dc = filtered_dc[
+    (filtered_dc['total_staff'] >= staff_filter[0]) &
+    (filtered_dc['total_staff'] <= staff_filter[1])
+]
+
+# Batch Range
+filtered_dc = filtered_dc[
+    (filtered_dc['total_batches'] >= batch_filter[0]) &
+    (filtered_dc['total_batches'] <= batch_filter[1])
+]
+
+# Final dataframe
+dc = filtered_dc
+
+# KPI
+
 dc['load_index']      = dc['avg_hours'] * dc['total_batches']
 dc['batch_per_staff'] = (dc['total_batches'] / dc['total_staff']).round(1)
 
@@ -82,22 +157,18 @@ fig.add_annotation(
     font=dict(size=14),
     align="center"
 )
-
-# ── Layout ──
+# --- Layout ---
 fig.update_layout(
-    title_text="<b>Course Dashboard</b>",
-    title_x=0.5,
-    height=220,
-    margin=dict(t=50, b=30, l=10, r=10),  # extra bottom space
-    template="plotly_white"
+    height=250,
+    margin=dict(t=50, b=10, l=10, r=10)
 )
 
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[6]:
 
-
+st.subheader("📊 Batch Distribution by Course")
 fig = px.bar(dc, x='course', y='total_batches',
              title='Total Batches Running per Course',
              color='total_batches',
@@ -105,12 +176,12 @@ fig = px.bar(dc, x='course', y='total_batches',
              text='total_batches')
 fig.update_traces(textposition='outside')
 fig.update_layout(xaxis_tickangle=-30)
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[7]:
 
-
+st.subheader("📊 Teaching Hours by Course")
 # ── Donut 1 — Batch share per course ─────────────────────────────────────
 fig1 = px.pie(dc, names='course', values='total_batches',
               hole=0.5,
@@ -118,11 +189,11 @@ fig1 = px.pie(dc, names='course', values='total_batches',
               color_discrete_sequence=px.colors.qualitative.Set2)
 fig1.update_traces(textinfo='label+percent', textposition='outside')
 fig1.update_layout(showlegend=True)
-fig1.show()
+st.plotly_chart(fig1, use_container_width=True)
 
 
 # In[8]:
-
+st.subheader("📊 Efficiency Ratio: Batches per Staff Member")
 
 dc['batches_per_staff'] = (dc['total_batches'] / dc['total_staff']).round(1)
 
@@ -134,24 +205,24 @@ fig = px.bar(dc.sort_values('batches_per_staff', ascending=False),
              text='batches_per_staff')
 fig.update_traces(textposition='outside')
 fig.update_layout(xaxis_tickangle=-30)
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)
 
 # In[9]:
 
 
+st.subheader("📊 Average Teaching Hours per Course" )
 fig6 = px.bar(dc.sort_values('avg_hours'), x='avg_hours', y='course',
               orientation='h',
               title='Avg Teaching Hours per Course',
               color='avg_hours', color_continuous_scale='Oranges',
               text='avg_hours')
 fig6.update_traces(textposition='outside')
-fig6.show()
-
+fig6.update_layout(yaxis={'categoryorder':'total ascending'})
+st.plotly_chart(fig6, use_container_width=True)     
 
 # In[10]:
 
-
+st.subheader("📊 Batch Distribution by Department & Course")
 fig = px.treemap(
     dc,
     path=['department', 'course'],
@@ -164,10 +235,15 @@ fig = px.treemap(
 
 fig.update_traces(textinfo='label+value+percent root')
 fig.update_layout(margin=dict(t=50, l=10, r=10, b=10))
-fig.show()
+st.plotly_chart(fig, use_container_width=True   )
 
 
-# In[ ]:
+# ----------------------------
+#5- 📋 RAW DATA
+# ----------------------------
+st.subheader("📋 Raw Data")
+
+st.dataframe(dc, use_container_width=True)
 
 
 

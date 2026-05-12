@@ -4,50 +4,38 @@
 # In[1]:
 
 
+import streamlit as st
 import pandas as pd
-import numpy as np
+import numpy as np  
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import warnings
+warnings.filterwarnings('ignore')       
+from pathlib import Path
 
+# Project root
+BASE_DIR = Path.cwd()
+DATA_DIR = BASE_DIR / "data"
 
 # ### Load dataset
 
 # In[2]:
 
 
-att=pd.read_csv("../data/attendance_current_month.csv")
+st.set_page_config(page_title="Attendance Dashboard", layout="wide")
+st.title("📋 Attendance Dashboard")
+att=pd.read_csv(DATA_DIR / "attendance_current_month.csv")
 
 
 # In[3]:
 
 
-cls=pd.read_csv("../data/classroom.csv")
-
-
-# In[4]:
-
-
-att.head()
-
-
-# In[5]:
-
-
-cls.head()
-
-
-# In[6]:
-
-
-att.columns
 
 
 # In[7]:
 
-
-cls.columns
 
 
 # In[8]:
@@ -56,41 +44,62 @@ cls.columns
 att['Status'].unique()
 
 
-# In[9]:
-
 
 att['course'].unique()
-
-
-# In[10]:
 
 
 att.duplicated().sum()
 
 
-# In[11]:
-
-
-cls.duplicated().sum()
-
-
-# In[12]:
-
 
 att.isna().sum()
 
+# ----------------------------
+# 🎛️ FILTERS
+# ----------------------------
 
-# In[13]:
+st.sidebar.header("🔍 Attendance Filters")
 
+# Course Filter
+course_filter = st.sidebar.multiselect(
+    "Select Course",
+    sorted(att['course'].dropna().unique())
+)
 
-cls.isna().sum()
+# Status Filter
+status_filter = st.sidebar.multiselect(
+    "Select Status",
+    sorted(att['Status'].dropna().unique())
+)
 
+# Batch Filter
+batch_filter = st.sidebar.multiselect(
+    "Select Batch",
+    sorted(att['batch_id'].dropna().unique())
+)
 
-# ## Visualisation
+# Apply Filters
+filtered_att = att.copy()
 
-# ### KPI's
+if course_filter:
+    filtered_att = filtered_att[
+        filtered_att['course'].isin(course_filter)
+    ]
 
-# In[14]:
+if status_filter:
+    filtered_att = filtered_att[
+        filtered_att['Status'].isin(status_filter)
+    ]
+
+if batch_filter:
+    filtered_att = filtered_att[
+        filtered_att['batch_id'].isin(batch_filter)
+    ]
+
+# Final filtered dataframe
+att = filtered_att
+
+# ### KPI
 
 
 # --- Data ---
@@ -127,17 +136,14 @@ add_kpi(excellent, "Excellent Students", [0.26, 0.48])
 add_kpi(warning, "At Risk (Warning) Students", [0.52, 0.74])
 add_kpi(critical, "Critical Students", [0.78, 1.00])
 
-# Layout
-fig.update_layout(
-    title_text="<b>Attendance Dashboard</b>",
-    title_x=0.5,
-    height=200,
-    margin=dict(t=50, b=10, l=10, r=10,
-    )
 
+# --- Layout ---
+fig.update_layout(
+    height=250,
+    margin=dict(t=50, b=10, l=10, r=10)
 )
 
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # ### Attendence status
@@ -165,11 +171,11 @@ status_counts = (att['Status']
 # In[17]:
 
 
-status_counts 
+
 
 
 # In[18]:
-
+st.subheader("📊 Attendance Status Distribution")
 
 fig = make_subplots(
     rows=1, cols=2,
@@ -219,7 +225,7 @@ fig.update_layout(
     paper_bgcolor='white'
 )
 
-fig.show()
+st.plotly_chart(fig, use_container_width=True)  
 
 
 # ### Course x Attendance
@@ -234,11 +240,9 @@ course_status = (att.groupby(['course','Status'])
 # In[20]:
 
 
-course_status
-
 
 # In[21]:
-
+st
 
 fig = px.bar(
     course_status,
@@ -260,8 +264,7 @@ fig.update_layout(
     paper_bgcolor='white',
     legend=dict(orientation='h', yanchor='bottom', y=1.02)
 )
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)  
 
 # ### Daily attendence trend
 
@@ -294,7 +297,7 @@ mean_pct = daily_df['Pct'].mean()
 
 
 # In[23]:
-
+st.subheader("📈 Daily Attendance Trend")
 
 # Line chart
 fig = px.line(
@@ -340,8 +343,7 @@ fig.update_layout(
     paper_bgcolor='white'
 )
 
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)  
 
 # In[24]:
 
@@ -357,12 +359,10 @@ batch_status = batch_status[['Excellent','Regular','Warning','Critical']]
 # In[25]:
 
 
-batch_status
-
 
 # In[26]:
 
-
+st
 fig = go.Figure(go.Heatmap(
     z=batch_status.values,
     x=batch_status.columns.tolist(),
@@ -383,8 +383,7 @@ fig.update_layout(
     height=520,
     paper_bgcolor='white'
 )
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)  
 
 # In[27]:
 
@@ -415,11 +414,10 @@ top_absent = top_absent.sort_values(by='Absent', ascending=True)
 # In[30]:
 
 
-top_absent
 
 
 # In[31]:
-
+st.subheader("📊 Top 10 Most Absent Students")
 
 fig = px.bar(
     top_absent,
@@ -443,7 +441,7 @@ fig.update_layout(
     paper_bgcolor='white',
     xaxis_range=[0, top_absent['Absent'].max() + 5]
 )
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[32]:
@@ -455,6 +453,7 @@ course_pa = (att.groupby('course')[['Present','Absent']]
              .reset_index()
              .sort_values('Present', ascending=False))
 
+st.subheader("📊 Average Present vs Absent Days by Course")
 fig = go.Figure()
 fig.add_trace(go.Bar(
     name='Present',
@@ -482,11 +481,18 @@ fig.update_layout(
     paper_bgcolor='white',
     legend=dict(orientation='h', yanchor='bottom', y=1.02)
 )
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[ ]:
 
+
+# ----------------------------
+#5- 📋 RAW DATA
+# ----------------------------
+st.subheader("📋 Raw Data")
+
+st.dataframe(att, use_container_width=True)
 
 
 

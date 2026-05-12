@@ -1,409 +1,496 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# # 📊 Cyber Square Institute - Staff Analysis
-# 
-# ## 🎯 Objective
-# This project analyzes staff distribution, workload patterns, and course allocation to identify inefficiencies and provide actionable recommendations.
-# 
-# ## 📁 Dataset
-# - File: `staff_dataset.csv`
-# - Total Records: 17 staff members
-# 
-# ## 🔍 Key Focus Areas
-# - Staff composition (Teaching vs Non-Teaching)
-# - Workload distribution (hours & batches)
-# - Course-wise dependency
-# - Organizational efficiency
-
-# ##  Setup & Data Loading
-
-# In[1]:
-
-
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
+# Cyber Square Institute — Staff Analysis Dashboard
+# Run: streamlit run staff_dashboard.py
 
 import warnings
-warnings.filterwarnings('ignore')
+warnings.filterwarnings("ignore")
 
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.express as px
+from pathlib import Path
 
-# In[2]:
+# Project root
+BASE_DIR = Path.cwd()
+DATA_DIR = BASE_DIR / "data"
+# ─────────────────────────────────────────────
+# Page config
+# ─────────────────────────────────────────────
+st.set_page_config(
+    page_title="Cyber Square — Staff Analysis",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
+# ─────────────────────────────────────────────
+# Load data
+# ─────────────────────────────────────────────
+@st.cache_data
+def load_data():
+    df = pd.read_csv(DATA_DIR / "staff_dataset.csv")
+    df.columns = df.columns.str.strip().str.lower()
+    return df
 
-# Load dataset
-df = pd.read_csv("../data/staff_dataset.csv")
+df = load_data()
 
+teaching_df     = df[df["department"] == "Teaching"].copy()
+non_teaching_df = df[df["department"] != "Teaching"].copy()
 
-# In[3]:
+# ─────────────────────────────────────────────
+# Sidebar filters
+# ─────────────────────────────────────────────
+st.sidebar.title("🔍 Filters")
 
+dept_options = sorted(df["department"].unique().tolist())
+sel_dept = st.sidebar.multiselect("Department", dept_options, default=dept_options)
 
-df.head()
+hour_min, hour_max = int(df["hours_per_day"].min()), int(df["hours_per_day"].max())
+sel_hours = st.sidebar.slider("Hours per Day", hour_min, hour_max, (hour_min, hour_max))
 
+batch_options = sorted(df["batches_handling"].unique().tolist())
+sel_batches = st.sidebar.multiselect("Batches Handling", batch_options, default=batch_options)
 
-# ## Data Overview
+filt = df[
+    df["department"].isin(sel_dept) &
+    df["hours_per_day"].between(sel_hours[0], sel_hours[1]) &
+    df["batches_handling"].isin(sel_batches)
+].copy()
 
-# In[4]:
+filt_teaching = filt[filt["department"] == "Teaching"].copy()
 
+st.sidebar.markdown("---")
+st.sidebar.caption(f"Showing **{len(filt)}** of **{len(df)}** staff members")
 
-df.shape
+# ─────────────────────────────────────────────
+# Header
+# ─────────────────────────────────────────────
+st.title("📊 Staff Analysis")
+st.caption("Staff composition · workload distribution · batch allocation · course dependency")
+st.divider()
 
+# ─────────────────────────────────────────────
+# KPI Row
+# ─────────────────────────────────────────────
+k1, k2, k3, k4 = st.columns(4)
 
-# In[5]:
+total_staff      = len(filt)
+teaching_count   = int((filt["department"] == "Teaching").sum())
+non_teaching_cnt = total_staff - teaching_count
+avg_hours        = round(filt["hours_per_day"].mean(), 1) if total_staff else 0
+top_trainer      = (
+    filt_teaching.loc[filt_teaching["hours_per_day"].idxmax(), "name"]
+    if not filt_teaching.empty else "—"
+)
 
+# ─────────────────────────────────────────────
+# KPI Dashboard Card Style
+# ─────────────────────────────────────────────
 
-df.info()
+import plotly.graph_objects as go
+import streamlit as st
 
-
-# In[6]:
-
-
-df.describe()
-
-
-# ## KPIs
-
-# In[9]:
-
-
-# ── Clean data ──
-df.columns = df.columns.str.strip().str.lower()
-
-# ── KPI calculations ──
-total_staff      = len(df)
-teaching_staff   = (df['department'] == 'Teaching').sum()
-non_teaching     = total_staff - teaching_staff
-avg_hours        = round(df['hours_per_day'].mean(), 1)
-
-# ✅ Most loaded trainer (based on batches)
-top_trainer = df.loc[df['hours_per_day'].idxmax(), 'name']
 # ── Figure ──
 fig = go.Figure()
 
-# Helper
+# ── Helper Function ──
 def add_kpi(value, title, x_pos, suffix=""):
     fig.add_trace(go.Indicator(
         mode="number",
         value=value,
-        title={"text": f"<b>{title}</b>"},
-        number={"font": {"size": 40}, "suffix": suffix},
-        domain={'x': x_pos, 'y': [0, 1]}
+        title={
+            "text": f"<b>{title}</b>",
+            "font": {"size": 18}
+        },
+        number={
+            "font": {"size": 42},
+            "suffix": suffix
+        },
+        domain={'x': x_pos, 'y': [0.25, 1]}
     ))
 
-# ── KPIs ──
-add_kpi(total_staff,    "Total Staff",        [0.00, 0.22])
-add_kpi(teaching_staff, "Teaching Staff",     [0.26, 0.48])
-add_kpi(non_teaching,   "Non-Teaching Staff", [0.52, 0.74])
-add_kpi(avg_hours,      "Avg Hours/Day",      [0.78, 1.00], " h")
+# ── KPI Values ──
+add_kpi(total_staff,      "👥 Total Staff",        [0.00, 0.22])
+add_kpi(teaching_count,   "🎓 Teaching Staff",     [0.26, 0.48])
+add_kpi(non_teaching_cnt, "🏢 Non-Teaching Staff", [0.52, 0.74])
+add_kpi(avg_hours,        "⏱ Avg Hours / Day",    [0.78, 1.00], " h")
 
-# ── Add Most Loaded Trainer (below KPIs) ──
+# ── Bottom Annotation ──
 fig.add_annotation(
-    x=0.5, y=0.05,
-    text=f"<b>Most Loaded Trainer:</b> {top_trainer}",
+    x=0.5,
+    y=0.02,
+    text=f"🏆 <b>Most Loaded Trainer:</b> {top_trainer}",
     showarrow=False,
-    xref="paper", yref="paper",
-    font=dict(size=14),
+    xref="paper",
+    yref="paper",
+    font=dict(size=16),
     align="center"
 )
 
-# ── Layout ──
+# --- Layout ---
 fig.update_layout(
-    title_text="<b>Staff Overview Dashboard</b>",
-    title_x=0.5,
-    height=220,
-    margin=dict(t=50, b=30, l=10, r=10),
-    template="plotly_white"
+    height=250,
+    margin=dict(t=50, b=10, l=10, r=10)
 )
+# ── Remove Empty Axes/Grid ──
+fig.update_xaxes(visible=False)
+fig.update_yaxes(visible=False)
 
-fig.show()
+# ── Show ──
+st.plotly_chart(fig, use_container_width=True)
+# ─────────────────────────────────────────────
+# Tabs
+# ─────────────────────────────────────────────
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "🏗 Staff Composition",
+    "⏱ Workload Analysis",
+    "📦 Batch Handling",
+    "📚 Course Analysis",
+    "📋 Raw Data",
+])
 
+# ══════════════════════════════════════════════
+# TAB 1 — Staff Composition
+# ══════════════════════════════════════════════
+with tab1:
+    col_a, col_b = st.columns(2)
 
-# ## Staff Composition
-# 
-# Understanding how staff are distributed between Teaching and Non-Teaching roles.
+    with col_a:
+        st.subheader("Teaching vs Non-Teaching")
+        comp_df = filt["department"].apply(
+            lambda d: "Teaching" if d == "Teaching" else "Non-Teaching"
+        ).value_counts().reset_index()
+        comp_df.columns = ["Type", "Count"]
 
-# In[ ]:
+        fig_pie = px.pie(
+            comp_df,
+            names="Type",
+            values="Count",
+            hole=0.45,
+            color="Type",
+            color_discrete_map={"Teaching": "#378ADD", "Non-Teaching": "#1D9E75"},
+        )
+        fig_pie.update_traces(textposition="inside", textinfo="percent+label+value")
+        fig_pie.update_layout(height=340, showlegend=True, margin=dict(l=10, r=10, t=20, b=10))
+        st.plotly_chart(fig_pie, use_container_width=True)
 
+    with col_b:
+        st.subheader("Staff by Department")
+        dept_df = filt["department"].value_counts().reset_index()
+        dept_df.columns = ["Department", "Count"]
 
-total_staff = len(df)
-teaching_df = df[df['department'] == 'Teaching']
+        fig_dept = px.bar(
+            dept_df.sort_values("Count"),
+            x="Count",
+            y="Department",
+            orientation="h",
+            text="Count",
+            color="Count",
+            color_continuous_scale=["#CECBF6", "#534AB7"],
+        )
+        fig_dept.update_traces(textposition="outside")
+        fig_dept.update_layout(
+            height=340, coloraxis_showscale=False,
+            xaxis=dict(range=[0, dept_df["Count"].max() + 2]),
+            margin=dict(l=10, r=30, t=20, b=10),
+        )
+        st.plotly_chart(fig_dept, use_container_width=True)
 
-teaching_count = len(teaching_df)
-non_teaching_count = total_staff - teaching_count
+    st.subheader("Staff Directory")
+    role_color = {"Teaching": "#EAF3FB", "Non-Teaching": "#EAFAF1"}
+    display = filt[["staff_id", "name", "role", "course", "department", "batches_handling", "hours_per_day"]].copy()
+    display.columns = ["ID", "Name", "Role", "Course", "Department", "Batches", "Hours/Day"]
+    st.dataframe(
+        display.style.apply(
+            lambda row: [
+                f"background-color: {'#EAF3FB' if row['Department'] == 'Teaching' else '#EAFAF1'}" for _ in row
+            ], axis=1
+        ),
+        use_container_width=True,
+        hide_index=True,
+        height=350,
+    )
 
-print(f"Total Staff: {total_staff}")
-print(f"Teaching Staff: {teaching_count}")
-print(f"Non-Teaching Staff: {non_teaching_count}")
-print(f"Teaching %: {teaching_count/total_staff*100:.1f}%")
+    st.info(
+        f"**Teaching staff make up {teaching_count/total_staff*100:.1f}%** of total staff. "
+        "Non-teaching roles include Administration, Finance, HR/Placement, Marketing, and Front Office."
+        if total_staff else "No data for selected filters."
+    )
 
+# ══════════════════════════════════════════════
+# TAB 2 — Workload Analysis
+# ══════════════════════════════════════════════
+with tab2:
+    col_a, col_b = st.columns(2)
 
-# In[ ]:
+    with col_a:
+        st.subheader("Staff Workload Ranking (Hours/Day)")
+        fig_rank = px.bar(
+            filt.sort_values("hours_per_day"),
+            x="hours_per_day",
+            y="name",
+            color="department",
+            orientation="h",
+            text="hours_per_day",
+            labels={"hours_per_day": "Hours/Day", "name": "Staff", "department": "Department"},
+            color_discrete_sequence=px.colors.qualitative.Safe,
+        )
+        fig_rank.update_traces(textposition="outside")
+        fig_rank.update_layout(
+            height=450,
+            xaxis=dict(range=[0, filt["hours_per_day"].max() + 1.5]),
+            margin=dict(l=10, r=30, t=20, b=10),
+        )
+        st.plotly_chart(fig_rank, use_container_width=True)
 
+    with col_b:
+        st.subheader("Hours Distribution")
+        fig_hist = px.histogram(
+            filt,
+            x="hours_per_day",
+            color="department",
+            nbins=8,
+            barmode="overlay",
+            labels={"hours_per_day": "Hours/Day", "department": "Department"},
+            color_discrete_sequence=px.colors.qualitative.Safe,
+        )
+        fig_hist.update_layout(
+            height=220,
+            bargap=0.1,
+            margin=dict(l=10, r=10, t=20, b=10),
+        )
+        st.plotly_chart(fig_hist, use_container_width=True)
 
-fig = px.bar(
-    df,
-    x=df['department'].value_counts().index,
-    y=df['department'].value_counts().values,
-    color=df['department'].value_counts().index,
-    title="Staff Distribution by Department",
-    labels={'x': 'Department', 'y': 'Count'}
-)
-fig.show()
+        st.subheader("Hours Stats by Department")
+        stats = (
+            filt.groupby("department")["hours_per_day"]
+            .agg(["mean", "min", "max", "count"])
+            .round(1)
+            .reset_index()
+        )
+        stats.columns = ["Department", "Avg h", "Min h", "Max h", "Count"]
+        st.dataframe(stats, use_container_width=True, hide_index=True)
 
+    st.subheader("Teaching Staff — Workload vs Avg Line")
+    if not filt_teaching.empty:
+        avg_line = filt_teaching["hours_per_day"].mean()
+        fig_line = px.bar(
+            filt_teaching.sort_values("hours_per_day", ascending=False),
+            x="name",
+            y="hours_per_day",
+            color="hours_per_day",
+            color_continuous_scale=["#1D9E75", "#FAC775", "#D85A30"],
+            text="hours_per_day",
+            labels={"hours_per_day": "Hours/Day", "name": "Trainer"},
+        )
+        fig_line.add_hline(
+            y=avg_line, line_dash="dash", line_color="#185FA5",
+            annotation_text=f"Avg: {avg_line:.1f} h", annotation_position="top right"
+        )
+        fig_line.update_traces(textposition="outside")
+        fig_line.update_layout(
+            height=320,
+            coloraxis_showscale=False,
+            yaxis=dict(range=[0, filt_teaching["hours_per_day"].max() + 1.5]),
+            margin=dict(l=10, r=10, t=20, b=10),
+        )
+        st.plotly_chart(fig_line, use_container_width=True)
 
-# ## ⏱️ Workload Analysis
-# 
-# We analyze working hours and batch allocation to detect imbalance.
+    st.warning(
+        "**Workload Gap:** Hours range from "
+        f"**{filt['hours_per_day'].min()} h** (min) to **{filt['hours_per_day'].max()} h** (max) — "
+        f"a gap of **{filt['hours_per_day'].max() - filt['hours_per_day'].min()} h**. "
+        "Non-teaching staff consistently work 8 h while teaching staff vary between 2–5 h."
+    )
 
-# In[ ]:
+# ══════════════════════════════════════════════
+# TAB 3 — Batch Handling
+# ══════════════════════════════════════════════
+with tab3:
+    col_a, col_b = st.columns(2)
 
+    with col_a:
+        st.subheader("Batch Allocation per Trainer")
+        if not filt_teaching.empty:
+            fig_batch = px.bar(
+                filt_teaching.sort_values("batches_handling"),
+                x="batches_handling",
+                y="name",
+                orientation="h",
+                color="batches_handling",
+                color_continuous_scale=["#9FE1CB", "#0F6E56"],
+                text="batches_handling",
+                labels={"batches_handling": "Batches", "name": "Trainer"},
+            )
+            fig_batch.update_traces(textposition="outside")
+            fig_batch.update_layout(
+                height=380,
+                coloraxis_showscale=False,
+                xaxis=dict(range=[0, filt_teaching["batches_handling"].max() + 1], dtick=1),
+                margin=dict(l=10, r=30, t=20, b=10),
+            )
+            st.plotly_chart(fig_batch, use_container_width=True)
 
-print("Total Hours:", df['hours_per_day'].sum())
-print("Average Hours (Teaching):", teaching_df['hours_per_day'].mean())
-print("Max Hours:", teaching_df['hours_per_day'].max())
-print("Min Hours:", teaching_df['hours_per_day'].min())
+    with col_b:
+        st.subheader("Batch Count Distribution")
+        if not filt_teaching.empty:
+            batch_dist = filt_teaching["batches_handling"].value_counts().reset_index()
+            batch_dist.columns = ["Batches", "Trainers"]
+            fig_bdist = px.pie(
+                batch_dist,
+                names="Batches",
+                values="Trainers",
+                hole=0.45,
+                color_discrete_sequence=["#378ADD", "#1D9E75", "#D85A30"],
+            )
+            fig_bdist.update_traces(textposition="inside", textinfo="percent+label+value")
+            fig_bdist.update_layout(
+                height=220,
+                showlegend=True,
+                margin=dict(l=10, r=10, t=20, b=10),
+            )
+            st.plotly_chart(fig_bdist, use_container_width=True)
 
+            st.subheader("Batch vs Hours Scatter")
+            fig_scatter = px.scatter(
+                filt_teaching,
+                x="batches_handling",
+                y="hours_per_day",
+                size="hours_per_day",
+                color="hours_per_day",
+                hover_name="name",
+                hover_data={"course": True},
+                color_continuous_scale=["#1D9E75", "#FAC775", "#D85A30"],
+                labels={"batches_handling": "Batches Handling", "hours_per_day": "Hours/Day"},
+            )
+            fig_scatter.update_layout(
+                height=250,
+                coloraxis_showscale=False,
+                xaxis=dict(dtick=1),
+                margin=dict(l=10, r=10, t=20, b=10),
+            )
+            st.plotly_chart(fig_scatter, use_container_width=True)
 
-# In[ ]:
+    st.subheader("Workload vs Batch Responsibility (Grouped)")
+    if not filt_teaching.empty:
+        fig_box = px.box(
+            filt_teaching,
+            x="batches_handling",
+            y="hours_per_day",
+            points="all",
+            hover_name="name",
+            color="batches_handling",
+            color_discrete_sequence=["#378ADD", "#1D9E75", "#D85A30"],
+            labels={"batches_handling": "Batches Handling", "hours_per_day": "Hours/Day"},
+        )
+        fig_box.update_layout(
+            height=300,
+            showlegend=False,
+            xaxis=dict(dtick=1),
+            margin=dict(l=10, r=10, t=20, b=10),
+        )
+        st.plotly_chart(fig_box, use_container_width=True)
 
+    st.info(
+        "**Batch count is not the sole driver of workload.** "
+        "Trainers with the same batch count (e.g. 3 batches) show varying hours (3–5 h), "
+        "indicating course complexity and scheduling differences play a significant role."
+    )
 
-plt.figure(figsize=(7,4))
-sns.histplot(df['hours_per_day'], kde=True)
-plt.title("Distribution of Working Hours")
-plt.xlabel("Hours per Day")
-plt.show()
+# ══════════════════════════════════════════════
+# TAB 4 — Course Analysis
+# ══════════════════════════════════════════════
+with tab4:
+    col_a, col_b = st.columns(2)
 
+    with col_a:
+        st.subheader("Trainers per Course")
+        if not filt_teaching.empty:
+            course_counts = filt_teaching["course"].value_counts().reset_index()
+            course_counts.columns = ["Course", "Trainers"]
+            fig_course = px.bar(
+                course_counts.sort_values("Trainers"),
+                x="Trainers",
+                y="Course",
+                orientation="h",
+                text="Trainers",
+                color="Trainers",
+                color_continuous_scale=["#D85A30", "#FAC775", "#1D9E75"],
+            )
+            fig_course.update_traces(textposition="outside")
+            fig_course.add_vline(
+                x=1, line_dash="dash", line_color="gray",
+                annotation_text="Single trainer risk"
+            )
+            fig_course.update_layout(
+                height=380,
+                coloraxis_showscale=False,
+                xaxis=dict(range=[0, course_counts["Trainers"].max() + 1], dtick=1),
+                margin=dict(l=10, r=40, t=20, b=10),
+            )
+            st.plotly_chart(fig_course, use_container_width=True)
 
-# ### 📊 Distribution of Working Hours ( Teaching )
-# 
-# Working hours range from **2 to 5 hours per day**, with an average of **~3.6 hours**.
-# 
-# - Most staff are concentrated between **3 to 4 hours**
-# - A few staff are at the higher end (**5 hours**) → potential higher workload
-# - Very few at the lower end (**2 hours**) → possible underutilization
-# 
-# ➡️ The distribution is slightly uneven, indicating that workload is not perfectly balanced across staff
+    with col_b:
+        st.subheader("Avg Hours by Course")
+        if not filt_teaching.empty:
+            course_hrs = (
+                filt_teaching.groupby("course")["hours_per_day"]
+                .mean().round(1).reset_index()
+                .sort_values("hours_per_day")
+            )
+            course_hrs.columns = ["Course", "Avg Hours"]
+            fig_chr = px.bar(
+                course_hrs,
+                x="Avg Hours",
+                y="Course",
+                orientation="h",
+                text="Avg Hours",
+                color="Avg Hours",
+                color_continuous_scale=["#9FE1CB", "#0F6E56"],
+            )
+            fig_chr.update_traces(textposition="outside")
+            fig_chr.update_layout(
+                height=380,
+                coloraxis_showscale=False,
+                xaxis=dict(range=[0, course_hrs["Avg Hours"].max() + 1]),
+                margin=dict(l=10, r=30, t=20, b=10),
+            )
+            st.plotly_chart(fig_chr, use_container_width=True)
 
-# In[ ]:
+    st.subheader("Course Dependency Risk")
+    if not filt_teaching.empty:
+        risk_df = filt_teaching.groupby("course").agg(
+            Trainers=("name", "count"),
+            Avg_Hours=("hours_per_day", "mean"),
+            Total_Batches=("batches_handling", "sum"),
+        ).reset_index().round(1)
+        risk_df["Risk"] = risk_df["Trainers"].apply(
+            lambda x: "🔴 High Risk" if x == 1 else "🟢 Low Risk"
+        )
+        risk_df.columns = ["Course", "Trainers", "Avg Hours", "Total Batches", "Risk"]
+        st.dataframe(risk_df, use_container_width=True, hide_index=True, height=380)
 
+    single = int((filt_teaching["course"].value_counts() == 1).sum()) if not filt_teaching.empty else 0
+    multi  = int((filt_teaching["course"].value_counts() > 1).sum()) if not filt_teaching.empty else 0
+    st.error(
+        f"**⚠ {single} course(s)** rely on a single trainer — creating operational risk. "
+        f"Only **{multi} course(s)** have backup trainer coverage."
+    )
 
-df_sorted = df.sort_values(by='hours_per_day', ascending=False)
+# ══════════════════════════════════════════════
+# TAB 5 — Raw Data
+# ══════════════════════════════════════════════
+with tab5:
+    st.subheader("Raw Dataset")
+    st.dataframe(filt, use_container_width=True, height=450)
 
-fig = px.bar(
-    df_sorted,
-    x='hours_per_day',
-    y='name',
-    color='department',
-    orientation='h',
-    title="Staff Workload Ranking (Hours per Day)"
-)
-fig.show()
-
-
-# ### 📊 Staff Workload Ranking
-# 
-# Working hours show a clear variation across staff, ranging from **2 to 8 hours per day**.
-# 
-# - A few staff members (e.g., top entries) are working around **8 hours**, which is significantly above the overall average (~3.6 hours)
-# - Most teaching staff fall within the **3 to 5 hours** range
-# - Some staff are at **2–3 hours**, indicating lower workload levels
-# 
-# ➡️ The gap between lowest and highest workload is **6 hours**, which is substantial
-# 
-# ➡️ Non-teaching roles (like Finance, Admin, HR) appear among the highest hour values, suggesting they may have more fixed or full-day responsibilities
-# 
-# ➡️ Teaching staff show moderate variation, while non-teaching staff tend to appear at the higher end
-
-# ##  Batch Handling Analysis
-
-# In[ ]:
-
-
-teaching_df = df[df['department'] == 'Teaching']
-
-
-# In[ ]:
-
-
-fig = px.bar(
-    teaching_df.sort_values(by='batches_handling'),
-    x='batches_handling',
-    y='name',
-    orientation='h',
-    color='batches_handling',
-    title="Batch Allocation per Trainer"
-)
-fig.show()
-
-
-# ### 📦 Batch Handling Distribution
-# 
-# Teaching staff handle either **2 or 3 batches**, with a clear majority handling **3 batches**.
-# 
-# - Most trainers are assigned **3 batches**
-# - A smaller group handles **2 batches**
-# - No trainers exceed 3 batches
-# 
-# ➡️ Batch allocation is fairly standardized, with limited variation across staff
-# 
-# ➡️ Since most trainers handle similar batch counts, differences in workload (observed earlier) are likely due to **working hours rather than batch allocation**
-
-# ## Course Analysis
-
-# In[ ]:
-
-
-course_counts = teaching_df['course'].value_counts().reset_index()
-course_counts.columns = ['course', 'count']
-
-fig = px.bar(
-    course_counts,
-    x='count',
-    y='course',
-    orientation='h',
-    text='count',
-    title="Number of Trainers per Course"
-)
-
-fig.update_traces(textposition='outside')
-fig.show()
-
-
-# ### 📚 Course-wise Staff Distribution
-# 
-# Out of 9 courses, **7 courses are handled by only 1 trainer**, while only **2 courses have 2 trainers each**.
-# 
-# - Courses with **2 trainers**:
-#   - Python Full Stack Development
-#   - Data Science with Python
-# 
-# - All other courses (UI/UX, Flutter, Business Analytics, Cyber Security, DevOps, MERN, React) have **only 1 trainer**
-# 
-# ➡️ This shows a strong imbalance in staff distribution across courses
-# 
-# ➡️ Majority of courses are **highly dependent on a single trainer**, creating operational risk
-# 
-# ➡️ Only a few core courses have backup support, indicating better resource planning in those areas
-
-# In[ ]:
-
-
-fig = px.scatter(
-    teaching_df,
-    x='batches_handling',
-    y='hours_per_day',
-    size='hours_per_day',
-    color='hours_per_day',
-    hover_data=['name'],
-    title="Workload vs Batch Responsibility (Teaching Staff)"
-)
-fig.show()
-
-
-# ### 🔗 Workload vs Batch Responsibility
-# 
-# Trainers handling **3 batches show a wider range of working hours (3 to 5 hrs)** compared to those handling 2 batches (2 to 4 hrs).
-# 
-# - Same batch count (3) → different workloads (3, 4, 5 hrs)
-# - This shows workload is **not evenly distributed even within same batch level**
-# - Trainers with **2 batches consistently stay on lower side (2–4 hrs)**
-# 
-# ➡️ Batch count alone does not determine workload
-# 
-# ➡️ Variations are likely caused by:
-# - Course complexity differences
-# - Uneven scheduling
-# - Additional responsibilities assigned to certain trainers
-# 
-# ➡️ Indicates need for better workload standardization across trainers
-
-# # 📊 Final Insights
-# 
-# ### 1. Staff Composition
-# - Teaching staff make up **64.7% (11 out of 17)** of total staff
-# - Non-teaching staff account for **35.3% (6 out of 17)**
-# ➡️ The institute is primarily focused on academic delivery, with a strong teaching base
-# 
-# ---
-# 
-# ### 2. Workload Distribution
-# - Working hours range from **2 to 8 hours per day**
-# - Average workload is around **~3.6 hours**
-# - Some staff operate at **high workload (5–8 hrs)** while others are at **2–3 hrs**
-# ➡️ Indicates significant imbalance in workload distribution
-# 
-# ---
-# 
-# ### 3. Batch Handling
-# - Trainers handle only **2 or 3 batches**
-# - Majority handle **3 batches (8 trainers)** vs **2 batches (3 trainers)**
-# ➡️ Batch allocation is fairly uniform and not a major source of imbalance
-# 
-# ---
-# 
-# ### 4. Workload vs Batch Relationship
-# - Trainers with **3 batches show varied workload (3–5 hrs)**
-# - Same batch count does not result in equal workload
-# ➡️ Workload is influenced by additional factors beyond batch count
-# 
-# ---
-# 
-# ### 5. Course Distribution
-# - Out of 9 courses:
-#   - **7 courses have only 1 trainer**
-#   - **2 courses have 2 trainers**
-# ➡️ High dependency on individual trainers for most courses
-# 
-# ---
-# 
-# ### 6. Key Pattern
-# ➡️ Workload imbalance is primarily driven by:
-# - Uneven scheduling
-# - Course complexity
-# - Staff role differences
-# 
-# NOT by batch allocation
-
-# ## ✅ Recommendations
-# 
-# ### 1. Balance Workload
-# - Redistribute working hours to reduce gap between **2 hrs and 8 hrs**
-# - Target a more consistent workload range (~3–5 hrs)
-# 
-# ---
-# 
-# ### 2. Optimize Scheduling
-# - Standardize class scheduling across trainers
-# - Avoid overloading specific individuals
-# 
-# ---
-# 
-# ### 3. Reduce Course Dependency
-# - Assign **backup trainers** for courses with only 1 staff
-# - Cross-train trainers across multiple courses
-# 
-# ---
-# 
-# ### 4. Monitor High Workload Staff
-# - Identify staff consistently working **5+ hours**
-# - Prevent burnout through redistribution
-# 
-# ---
-# 
-# ### 5. Improve Resource Planning
-# - Allocate staff based on both **batch count and course complexity**
-# - Not just number of batches
-# 
-# ---
-# 
-# ➡️ Implementing these changes can improve efficiency, reduce risk, and ensure better workload balance across the institute
-
-# In[ ]:
-
-
-
-
+    csv_bytes = filt.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        label="⬇ Download filtered data as CSV",
+        data=csv_bytes,
+        file_name="filtered_staff_dataset.csv",
+        mime="text/csv",
+    )

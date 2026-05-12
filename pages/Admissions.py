@@ -6,11 +6,22 @@
 
 # In[1]:
 
-
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from IPython.display import display, HTML
+import warnings
+warnings.filterwarnings('ignore')   
+import streamlit as st
+from pathlib import Path
+
+
+# Project root
+BASE_DIR = Path.cwd()
+
+# Data folder
+DATA_DIR = BASE_DIR / "data"
+
 
 PALETTE = {
     'primary':   '#2563EB',
@@ -41,12 +52,16 @@ def clean_layout(fig, title='', height=400):
 print('✅ Libraries loaded.')
 
 
+
+st.set_page_config(page_title="Admission Dashboard", layout="wide")
+st.title("📋 Admission Dashboard")
+
 # ## 📂 1. Load & Prepare Data
 
 # In[2]:
 
 
-admissions_raw = pd.read_csv('../data/admission.csv')
+admissions_raw = pd.read_csv(DATA_DIR / "admission.csv")
 
 admissions_raw['admission_date']  = pd.to_datetime(admissions_raw['admission_date'], dayfirst=False, errors='coerce')
 admissions_raw['admission_month'] = admissions_raw['admission_date'].dt.to_period('M').astype(str)
@@ -60,16 +75,30 @@ print(f'Admissions: {len(admissions)} rows  |  Columns: {list(admissions.columns
 
 # In[3]:
 
+# ----------------------------
+# 🎛️ FILTERS (IMPORTANT UPGRADE)
+# ----------------------------
+st.sidebar.header("🔍 Filters")
 
-FILTER_COURSES   = []   # e.g. ['Data Science with Python', 'DevOps']
-FILTER_MODES     = []   # e.g. ['Online']
-FILTER_LOCATIONS = []   # e.g. ['Kochi', 'Calicut']
+course_filter = st.sidebar.multiselect(
+    "Select Course", admissions_raw['course'].unique()
+)
 
-def apply(df, col, vals):
-    return df[df[col].isin(vals)] if vals else df
+mode_filter = st.sidebar.multiselect(
+    "Select Mode", admissions_raw['mode'].unique()
+)
 
-admissions = apply(apply(apply(admissions_raw, 'course', FILTER_COURSES), 'mode', FILTER_MODES), 'location', FILTER_LOCATIONS)
-print(f'Filtered → Admissions: {len(admissions)}')
+location_filter = st.sidebar.multiselect(
+    "Select Location", admissions_raw['location'].unique()
+)
+
+def apply(admissions_raw, col, vals):
+    return admissions_raw[admissions_raw[col].isin(vals)] if vals else admissions_raw
+
+admissions_raw = apply(admissions_raw, 'course', course_filter)
+admissions_raw = apply(admissions_raw, 'mode', mode_filter)
+admissions_raw= apply(admissions_raw , 'location', location_filter)
+
 
 
 # ## 📊 3. Admission KPIs
@@ -83,6 +112,7 @@ admitted         = int(admissions['is_admitted'].sum())
 not_admitted     = int((~admissions['is_admitted']).sum())
 admission_rate   = round(admitted / total_admissions * 100, 1) if total_admissions else 0
 unique_locations = int(admissions['location'].nunique())
+
 
 # --- Figure ---
 fig = go.Figure()
@@ -105,24 +135,21 @@ add_kpi(total_admissions, "Total Inquiries", [0.00, 0.22])
 add_kpi(admission_rate, "Admission Rate", [0.26, 0.48], " %")
 add_kpi(not_admitted, "Not Admitted", [0.52, 0.74])
 add_kpi(unique_locations, "Unique Locations", [0.78, 1.00])
-
 # --- Layout ---
+
 fig.update_layout(
-    title_text="<b>Admission Dashboard</b>",
-    title_x=0.5,
-    height=200,
-    margin=dict(t=50, b=10, l=10, r=10),
-    template="plotly_white"
+    height=250,
+    margin=dict(t=50, b=10, l=10, r=10)
 )
 
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)
+# ── Show Dashboard ──
 
 # ## 📋 4. Admission Insights
 
 # In[5]:
 
-
+st.subheader("📈 Admission Trend")
 # Admission Inquiries Over Time
 adm_trend = (admissions.groupby('admission_month').size()
              .reset_index(name='Inquiries').sort_values('admission_month'))
@@ -131,13 +158,15 @@ fig = px.line(adm_trend, x='admission_month', y='Inquiries',
 fig.update_traces(line_width=2.5, marker_size=6)
 clean_layout(fig, 'Admission Inquiries Over Time')
 fig.update_xaxes(tickangle=-30)
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)
 
 # In[6]:
 
 
 # Admission Status Split
+
+st.subheader("🥧 Admission Status Split")
+
 status_counts = admissions['status'].value_counts().reset_index()
 status_counts.columns = ['Status', 'Count']
 fig = px.pie(status_counts, names='Status', values='Count', hole=0.55,
@@ -145,13 +174,15 @@ fig = px.pie(status_counts, names='Status', values='Count', hole=0.55,
 fig.update_traces(textposition='outside', textinfo='percent+label',
                   marker=dict(line=dict(color='white', width=2)))
 clean_layout(fig, 'Admission Status Split')
-fig.show()
 
-
+st.plotly_chart(fig, use_container_width=True)
 # In[7]:
 
 
 # Inquiries by Location
+
+st.subheader("🌍 Inquiries by Location")
+
 loc_counts = admissions['location'].value_counts().reset_index()
 loc_counts.columns = ['Location', 'Count']
 fig = px.bar(loc_counts, x='Location', y='Count', color='Location',
@@ -159,13 +190,16 @@ fig = px.bar(loc_counts, x='Location', y='Count', color='Location',
 fig.update_traces(marker_line_width=0, textposition='outside')
 fig.update_layout(showlegend=False)
 clean_layout(fig, 'Inquiries by Location')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[8]:
 
 
 # Admission Rate by Course
+
+st.subheader("📚 Admission Rate by Course")
+
 course_adm = admissions.groupby('course')['is_admitted'].agg(['sum', 'count']).reset_index()
 course_adm.columns = ['Course', 'Admitted', 'Total']
 course_adm['Admission Rate (%)'] = (course_adm['Admitted'] / course_adm['Total'] * 100).round(1)
@@ -177,13 +211,14 @@ fig = px.bar(course_adm, x='Admission Rate (%)', y='Course', orientation='h',
 fig.update_traces(texttemplate='%{text}%', textposition='outside', marker_line_width=0)
 fig.update_coloraxes(showscale=False)
 clean_layout(fig, 'Admission Rate (%) by Course', height=420)
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)
 
 # In[9]:
 
 
 # Counsellor Performance
+st.subheader("👨‍💼 Counsellor Performance")
+
 counsellor = admissions.groupby('attended_by')['is_admitted'].agg(['sum', 'count']).reset_index()
 counsellor.columns = ['Counsellor', 'Admitted', 'Total Handled']
 counsellor['Not Admitted'] = counsellor['Total Handled'] - counsellor['Admitted']
@@ -196,13 +231,13 @@ fig.add_trace(go.Bar(name='Not Admitted', x=counsellor['Counsellor'], y=counsell
                      textposition='inside', marker_line_width=0))
 fig.update_layout(barmode='stack')
 clean_layout(fig, 'Counsellor Performance — Admissions Handled')
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)
 
 # In[10]:
 
 
 # Inquiry Leads by Qualification
+st.subheader("🎓 Inquiry Leads by Qualification")
 qual_counts = admissions['qualification'].value_counts().reset_index()
 qual_counts.columns = ['Qualification', 'Count']
 fig = px.bar(qual_counts, x='Qualification', y='Count', color='Qualification',
@@ -210,14 +245,11 @@ fig = px.bar(qual_counts, x='Qualification', y='Count', color='Qualification',
 fig.update_traces(marker_line_width=0, textposition='outside')
 fig.update_layout(showlegend=False)
 clean_layout(fig, 'Inquiry Leads by Qualification')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)  
 
+# ----------------------------
+#5- 📋 RAW DATA
+# ----------------------------
+st.subheader("📋 Raw Data")
 
-# ## 🗂️ 5. Raw Admissions Data
-
-# In[11]:
-
-
-print('=== Admissions Dataset ===')
-display(admissions.reset_index(drop=True))
-
+st.dataframe(admissions_raw, use_container_width=True)

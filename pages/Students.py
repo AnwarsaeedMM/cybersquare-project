@@ -5,12 +5,17 @@
 # ### A deep dive into enrollment patterns, course preferences, and student demographics.
 
 # In[1]:
-
-
+import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import plotly.graph_objects as go
 from IPython.display import display, HTML
+from pathlib import Path
+
+# Project root
+BASE_DIR = Path.cwd()
+DATA_DIR = BASE_DIR / "data"
 
 PALETTE = {
     'primary':   '#2563EB',
@@ -45,8 +50,10 @@ print('✅ Libraries loaded.')
 
 # In[2]:
 
+st.set_page_config(page_title="Students Dashboard", layout="wide")   
+st.title("👩‍🎓 Students Dashboard")
 
-students_raw = pd.read_csv("../data/students.csv")
+students_raw = pd.read_csv(DATA_DIR / "students.csv")
 
 students_raw['enrollment_date']  = pd.to_datetime(students_raw['enrollment_date'], dayfirst=False, errors='coerce')
 students_raw['enrollment_month'] = students_raw['enrollment_date'].dt.to_period('M').astype(str)
@@ -60,29 +67,62 @@ print(f'Students: {len(students)} rows  |  Columns: {list(students.columns)}')
 
 students.head()
 
+# ==============================
+# 🎛️ Sidebar Filters
+# ==============================
 
-# ## 🎛️ 2. Optional Filters
+st.sidebar.markdown("## 🎛️ Filter Students")
 
-# In[3]:
+# --- Course Filter ---
+FILTER_COURSES = st.sidebar.multiselect(
+    "Select Course",
+    options=sorted(students_raw['course'].dropna().unique())
+)
+
+# --- Mode Filter ---
+FILTER_MODES = st.sidebar.multiselect(
+    "Select Mode",
+    options=sorted(students_raw['mode'].dropna().unique())
+)
+
+# --- Education Filter ---
+FILTER_EDU = st.sidebar.multiselect(
+    "Education Level",
+    options=sorted(students_raw['education_level'].dropna().unique())
+)
+
+st.sidebar.markdown("---")
 
 
-FILTER_COURSES = []   # e.g. ['Data Science with Python', 'DevOps']
-FILTER_MODES   = []   # e.g. ['Online']
-FILTER_EDU     = []   # e.g. ['UG', 'PG']
+# ==============================
+# Apply Filters
+# ==============================
 
-def apply(df, col, vals):
-    return df[df[col].isin(vals)] if vals else df
+def apply_filter(df, column, values):
+    if values:
+        return df[df[column].isin(values)]
+    return df
 
-students = apply(apply(apply(students_raw, 'course', FILTER_COURSES), 'mode', FILTER_MODES), 'education_level', FILTER_EDU)
-print(f'Filtered → Students: {len(students)}')
+
+students = students_raw.copy()
+
+students = apply_filter(students, 'course', FILTER_COURSES)
+students = apply_filter(students, 'mode', FILTER_MODES)
+students = apply_filter(students, 'education_level', FILTER_EDU)
 
 
+# ==============================
+# Sidebar Summary
+# ==============================
+
+st.sidebar.success(
+    f"Showing {len(students)} of {len(students_raw)} students"
+)
 # ## 📊 3. Student KPIs
 
 # In[14]:
 
 
-import plotly.graph_objects as go
 
 # ── Data ──
 total_students = len(students)
@@ -121,21 +161,18 @@ add_kpi(avg_age,        "Average Age",      [0.78, 1.00])
 
 # ── Layout ──
 fig.update_layout(
-    title_text="<b>Student Dashboard</b>",
-    title_x=0.5,
     height=200,
     margin=dict(t=50, b=10, l=10, r=10),
     template="plotly_white"
 )
 
-fig.show()
-
+st.plotly_chart(fig, use_container_width=True)  
 
 # ## 👩‍🎓 4. Student Insights
 
 # In[5]:
 
-
+st.subheader("📊 Students Insights")
 # Students by Course
 course_counts = students['course'].value_counts().reset_index()
 course_counts.columns = ['Course', 'Students']
@@ -144,11 +181,10 @@ fig = px.bar(course_counts, x='Students', y='Course', orientation='h',
 fig.update_traces(marker_line_width=0)
 fig.update_layout(showlegend=False)
 clean_layout(fig, 'Students by Course', height=380)
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[6]:
-
 
 # Education Level Distribution
 edu_counts = students['education_level'].value_counts().reset_index()
@@ -158,7 +194,7 @@ fig = px.pie(edu_counts, names='Education Level', values='Count', hole=0.55,
 fig.update_traces(textposition='outside', textinfo='percent+label',
                   marker=dict(line=dict(color='white', width=2)))
 clean_layout(fig, 'Education Level Distribution')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[7]:
@@ -173,24 +209,26 @@ fig = px.bar(mode_counts, x='Mode', y='Count', color='Mode',
 fig.update_traces(marker_line_width=0, textposition='outside')
 fig.update_layout(showlegend=False)
 clean_layout(fig, 'Online vs Offline Enrollment')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[8]:
 
 
 # Age Distribution
+st.subheader("📊 Student Insights (Contd.)")
 fig = px.histogram(students, x='age', nbins=15,
                    color_discrete_sequence=[PALETTE['primary']])
 fig.update_traces(marker_line_color='white', marker_line_width=1)
 clean_layout(fig, 'Age Distribution of Students')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[9]:
 
 
 # Enrollment Trend Over Time
+st.subheader("📊 Student Insights (Contd.)")
 enroll_trend = (students.groupby('enrollment_month').size()
                 .reset_index(name='Count').sort_values('enrollment_month'))
 fig = px.area(enroll_trend, x='enrollment_month', y='Count',
@@ -198,7 +236,7 @@ fig = px.area(enroll_trend, x='enrollment_month', y='Count',
 fig.update_traces(line_width=2.5, marker_size=5)
 clean_layout(fig, 'Enrollment Trend Over Time')
 fig.update_xaxes(tickangle=-30)
-fig.show()
+st.plotly_chart(fig, use_container_width=True)
 
 
 # In[10]:
@@ -212,14 +250,14 @@ fig = px.pie(dur_counts, names='Duration', values='Students', hole=0.5,
 fig.update_traces(textposition='outside', textinfo='percent+label',
                   marker=dict(line=dict(color='white', width=2)))
 clean_layout(fig, 'Course Duration Preference')
-fig.show()
+st.plotly_chart(fig, use_container_width=True)  
 
 
 # ## 🗂️ 5. Raw Student Data
 
 # In[11]:
 
+st.subheader("📂 Raw Student Data")
+st.dataframe(students.reset_index(drop=True))
 
-print('=== Students Dataset ===')
-display(students.reset_index(drop=True))
 
