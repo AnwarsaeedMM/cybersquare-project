@@ -60,5 +60,12 @@ PAGES = {
 
 page_path = Path("pages") / PAGES[page]
 
+import os
+st.write("Trying:", page_path)
+
+if not page_path.exists():
+    st.error(f"File not found: {page_path}")
+    st.stop()
+
 with open(page_path, encoding="utf-8") as f:
     exec(f.read())
