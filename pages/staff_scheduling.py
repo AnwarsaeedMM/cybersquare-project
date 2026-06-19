@@ -211,7 +211,7 @@ with tab2:
             "daily_hours": "Daily h", "weekly_hours": "Weekly h",
         })
         .style
-        .applymap(colour_slot, subset=TIME_COLS)
+        .map(colour_slot, subset=TIME_COLS)
         .bar(subset=["Daily h"], color="#378ADD", vmin=0, vmax=7)
     )
     st.dataframe(styled, use_container_width=True, height=430)
