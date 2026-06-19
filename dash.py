@@ -50,7 +50,7 @@ PAGES = {
     "👨‍🏫 Staff": "staff.py",
     "🗓️ Scheduling": "staff_scheduling.py",
     "🏫 Classroom": "classroom.py",
-    "💼 Placement": "placement.py",
+    "💼 Placement": "placement.py", 
 }
 # ---------------------------------------------------
 # LOAD PAGE
