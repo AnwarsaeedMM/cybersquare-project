@@ -42,15 +42,15 @@ st.sidebar.markdown("---")
 # PAGE FILE MAPPING
 # ---------------------------------------------------
 PAGES = {
-    "🏠 Overview": "Overview.py",
-    "📝 Admissions": "Admissions.py",
-    "🎓 Students": "Students.py",
+    "🏠 Overview": "overview.py",
+    "📝 Admissions": "admissions.py",
+    "🎓 Students": "students.py",
     "📊 Attendance": "attendance.py",
-    "📚 Courses": "Courses.py",
+    "📚 Courses": "courses.py",
     "👨‍🏫 Staff": "staff.py",
-    "🗓️ Scheduling": "Staff_Scheduling.py",
-    "🏫 Classroom": "Classroom.py",
-    "💼 Placement": "PLACEMENT.py",
+    "🗓️ Scheduling": "staff_scheduling.py",
+    "🏫 Classroom": "classroom.py",
+    "💼 Placement": "placement.py",
 }
 # ---------------------------------------------------
 # LOAD PAGE
