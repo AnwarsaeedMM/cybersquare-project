@@ -22,8 +22,8 @@ page = st.sidebar.radio(
     "📂 Select Dashboard",
     [
         "🏠 Overview",
-        "🎓 Students",
         "📝 Admissions",
+        "🎓 Students",
         "📊 Attendance",
         "📚 Courses",
         "👨‍🏫 Staff",
@@ -41,8 +41,8 @@ st.sidebar.markdown("---")
 
 PAGES = {
     "🏠 Overview": "Overview.py",
-    "🎓 Students": "Students.py",
     "📝 Admissions": "Admissions.py",
+    "🎓 Students": "Students.py",
     "📊 Attendance": "Attendance.py",
     "📚 Courses": "Courses.py",
     "👨‍🏫 Staff": "Staff.py",

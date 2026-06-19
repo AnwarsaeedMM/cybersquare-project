@@ -53,18 +53,7 @@ company_filter = st.sidebar.multiselect(
     sorted(dt['company'].dropna().unique())
 )
 
-# Package Range Filter
-package_col = [c for c in dt.columns if 'package' in c.lower()][0]
 
-min_pkg = float(dt[package_col].min())
-max_pkg = float(dt[package_col].max())
-
-package_filter = st.sidebar.slider(
-    "Package Range (LPA)",
-    min_value=min_pkg,
-    max_value=max_pkg,
-    value=(min_pkg, max_pkg)
-)
 
 # ----------------------------
 # APPLY FILTERS
@@ -90,11 +79,6 @@ if company_filter:
         filtered_dt['company'].isin(company_filter)
     ]
 
-# Package Range
-filtered_dt = filtered_dt[
-    (filtered_dt[package_col] >= package_filter[0]) &
-    (filtered_dt[package_col] <= package_filter[1])
-]
 
 # Final filtered dataframe
 dt = filtered_dt.copy()
