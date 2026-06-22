@@ -6,8 +6,7 @@
 
 # In[1]:
 
-from turtle import st
-
+import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -348,11 +347,9 @@ fig = px.scatter(
     text='company',
     size='Max_Package',
     color='Avg_Package',
-    color_continuous_scale='RdYlGn',
-    trendline='ols',           # shows if hiring more = paying more
-    hover_data={'Max_Package': True, 'Total_Hired': True},
-    title='<b>Do Companies That Hire More Pay Better? (Trend Line)</b>',
-    size_max=35
+    size_max=35,
+    title='<b>Do Companies That Hire More Pay Better?</b>'
+
 )
 fig.update_traces(textposition='top center', selector=dict(mode='markers+text'))
 fig.update_layout(
